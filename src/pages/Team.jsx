@@ -14,7 +14,7 @@ const Team = () => {
     {
       title: "Mathieu Vanderroost",
       description: "Founder PhysioForce",
-      image: "/src/assets/mathieu.png",
+      image: "/mathieu.png",
       content: [
         "Master in rehabilitation sciences (2018, VUB)",
         "Master in sports physiotherapy (2018, VUB)",
