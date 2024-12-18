@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "team": "Team",
+    "values": "Aanpak",
+    "services": "Diensten",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "home": {
+    "welcome": "FysioForce",
+    "subtitle": "Herstel in beweging",
+    "cta": {
+      "contact": "Maak een afspraak"
+    },
+    "explore": "Of verken eerst"
+  },
+  "values": {
+    "title": "Aanpak",
+    "items": {
+      "movement": {
+        "title": "Herstel in beweging",
+        "description": "Bewegen is een cruciaal onderdeel van gezondheid. Gericht en gecontroleerd bewegen versnelt het herstelproces en zorgt voor pijndemping. Samen werken we aan een oefenschema, passend bij jouw situatie en doelen. Met als einddoel sterker en veerkrachtiger te worden, prestaties te verbeteren en klachten/blessures in de toekomst te voorkomen."
+      },
+      "evidence": {
+        "title": "Evidence Based Practice",
+        "description": "We vinden het belangrijk dat je een veilige, effectieve en up-to-date benadering krijgt van jouw gezondheidsprobleem. Onze behandelingen zijn gebaseerd op de meest actuele en betrouwbare wetenschappelijke kennis. Dit wordt afgestemd op wat voor jou belangrijk is en wat in de praktijk werkt."
+      },
+      "communication": {
+        "title": "Communicatie",
+        "description": "In onze praktijk staat communicatie centraal. We vinden het belangrijk om open en duidelijk met jou te praten over jouw klachten, doelen en verwachtingen. Daarnaast onderhouden we, indien nodig, contact met jouw behandelde arts of andere zorgverstrekkers. Zo zorgen we ervoor dat iedereen op de hoogte is van jouw voortgang en dat jouw zorg goed op elkaar wordt afgestemd."
+      }
+    }
+  },
+  "contact": {
+    "title": "Neem Contact Op",
+    "subtitle": "Heeft u een project in gedachten? Laten we bespreken hoe we uw visie tot leven kunnen brengen.",
+    "email": "E-mail",
+    "location": "Locatie",
+    "locationText": "Antwerpen, België",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Bericht via WhatsApp"
+  },
+  "services": {
+    "title": "Diensten",
+    "subtitle": "De sterkte van de praktijk ligt in musculoskeletale revalidatie. Dit houdt alle klachten in die gelinkt kunnen worden aan ons bewegingsstelsel.",
+    "specialties": {
+      "title": "Hieronder de tools waar we het meest in uitblinken:",
+      "items": [
+        "Post operatieve revalidatie",
+        "Manuele therapie",
+        "Sportkinesitherapie",
+        "Osteopathie (Enerki)",
+        "Dry Needling",
+        "Taping (sporttaping, kinesio- & dynamic taping)",
+        "Velocity based training"
+      ]
+    },
+    "additional": {
+      "title": "Waar we ook goed in zijn",
+      "items": [
+        "Reactivatie bij ouderen (gangrevalidatie en valpreventie)",
+        "Reconditionering na inactiviteit",
+        "Reumatische aandoeningen"
+      ]
+    }
+  },
+  "about": {
+    "mainTitle": "Over FysioForce",
+    "description": [
+      "FysioForce is een kinesitherapiepraktijk die staat voor een gepersonaliseerde aanpak van uw gezondheidsproblemen met focus op beweging.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "title": "Over Ons",
+    "subtitle": "Gepassioneerd over het creren van uitzonderlijke digitale ervaringen",
+    "experience": {
+      "title": "Ervaring",
+      "description": "Jaren ervaring in webontwikkeling en ontwerp"
+    },
+    "expertise": {
+      "title": "Expertise",
+      "description": "Gespecialiseerd in moderne webtechnologieën en frameworks"
+    },
+    "clients": {
+      "title": "Tevreden Klanten",
+      "description": "Succesvol afgeronde projecten voor klanten wereldwijd"
+    },
+    "gallery": {
+      "practice": "Onze moderne behandelruimte",
+      "equipment": "Geavanceerde apparatuur",
+      "treatment": "Comfortabele behandelkamers"
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "subtitle": "Vind antwoorden op veelvoorkomende vragen over onze diensten",
+    "appointment": {
+      "question": "Hoe verloopt de eerste afspraak?",
+      "answer": "We beginnen met een goed gesprek, de anamnese, om het verhaal achter uw klachten te leren kennen. Daarna volgt een uitgebreid lichamelijk onderzoek om een totaalbeeld te krijgen van uw gezondheidsklachten. Met al deze informatie wordt een persoonlijk behandelplan opgesteld, rekening houdend met uw verwachtingen."
+    },
+    "bring": {
+      "question": "Wat moet ik meebrengen?",
+      "answer": "- Voorschrift van behandelend arts\n- Identiteitskaart of geldig paspoort\n- Kleefbriefje van de mutualiteit\n- Eventuele recente beeldvorming, (operatie)verslagen, etc.\n- Comfortabele kleding\n- Arbeidsongevallenverzekering gegevens (indien arbeidsongeval)"
+    },
+    "cost": {
+      "question": "Hoeveel kost de behandeling?",
+      "answer": "Nog aan te vullen"
+    },
+    "payment": {
+      "question": "Hoe verloopt de betaling?",
+      "answer": "Nog aan te vullen"
+    }
+  },
+  "team": {
+    "title": "Ons Team",
+    "subtitle": "Toegewijde professionals tot uw dienst",
+    "members": {
+      "member1": {
+        "name": "Dr. Sophie Laurent",
+        "role": "Senior Kinesitherapeut",
+        "description": "Gespecialiseerd in sportrevalidatie"
+      },
+      "member2": {
+        "name": "Marc Dubois",
+        "role": "Kinesitherapeut",
+        "description": "Expert in manuele therapie"
+      }
+    }
+  }
+} 

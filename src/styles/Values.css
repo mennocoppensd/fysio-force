@@ -1,0 +1,100 @@
+.values-section {
+  padding: 4rem 0;
+  background: var(--background-color);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.value-card {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: all var(--transition-speed) var(--transition-timing);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 12px var(--shadow-color);
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color), var(--tertiary-color));
+  opacity: 0;
+  transition: opacity var(--transition-speed) var(--transition-timing);
+  z-index: 1;
+}
+
+.value-card:hover::before {
+  opacity: 0.1;
+}
+
+.value-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  position: relative;
+  z-index: 2;
+  transition: transform var(--transition-speed) var(--transition-timing);
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.value-card h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.value-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-element.show {
+  opacity: 1;
+  transform: translateY(0);
+} 

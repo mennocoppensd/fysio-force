@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "team": "Équipe",
+    "values": "Approche",
+    "services": "Services",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "home": {
+    "welcome": "FysioForce",
+    "subtitle": "La récupération en mouvement",
+    "cta": {
+      "contact": "Contactez-nous",
+      "projects": "Voir les Projets"
+    },
+    "explore": "Ou explorez d'abord",
+    "featured": {
+      "title": "Création de Sites Web Remarquables",
+      "subtitle": "Modernes, responsifs et adaptés à vos besoins",
+      "contactUs": "Contactez-nous"
+    }
+  },
+  "values": {
+    "title": "Notre approche",
+    "items": {
+      "movement": {
+        "title": "Rétablissement par le mouvement",
+        "description": "Le mouvement est un élément crucial de la santé. Un mouvement ciblé et contrôlé accélère le processus de guérison et aide à soulager la douleur. Ensemble, nous élaborons un programme d'exercices adapté à votre situation et à vos objectifs. Le but final est de devenir plus fort et plus résilient, d'améliorer les performances et de prévenir les plaintes/blessures futures."
+      },
+      "evidence": {
+        "title": "Pratique Fondée sur des Preuves",
+        "description": "Nous considérons qu'il est important que vous receviez une approche sûre, efficace et actualisée de votre problème de santé. Nos traitements sont basés sur les connaissances scientifiques les plus actuelles et fiables. Cela est adapté à ce qui est important pour vous et à ce qui fonctionne dans la pratique."
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Dans notre cabinet, la communication est centrale. Nous trouvons important de parler ouvertement et clairement avec vous de vos plaintes, objectifs et attentes. De plus, nous maintenons, si nécessaire, le contact avec votre médecin traitant ou d'autres prestataires de soins. Ainsi, nous nous assurons que tout le monde est au courant de vos progrès et que vos soins sont bien coordonnés."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez un projet en tête ? Discutons de la façon dont nous pouvons donner vie à votre vision.",
+    "email": "Email",
+    "location": "Localisation",
+    "locationText": "Anvers, Belgique",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Message sur WhatsApp"
+  },
+  "projects": {
+    "title": "Nos Projets",
+    "subtitle": "Découvrez nos dernières réalisations et comment nous donnons vie aux idées",
+    "viewProject": "Voir le Projet",
+    "viewLive": "Voir en Direct",
+    "project1": {
+      "title": "Projet 1",
+      "description": "Refonte de site web pour une entreprise locale",
+      "client": "Entreprise Locale",
+      "duration": "3 mois",
+      "technologies": "React, Node.js, MongoDB",
+      "challenges": "Le principal défi était de créer un design responsive qui fonctionne parfaitement sur tous les appareils tout en maintenant l'identité de marque du client.",
+      "results": "Le nouveau site a augmenté le trafic mobile de 45% et amélioré les taux de conversion de 25%."
+    },
+    "project2": {
+      "title": "Projet 2",
+      "description": "Développement d'une plateforme e-commerce",
+      "client": "Détaillant en Ligne",
+      "duration": "6 mois",
+      "technologies": "Next.js, Stripe, PostgreSQL",
+      "challenges": "Mise en place d'un système de paiement sécurisé et optimisation du processus de paiement pour une conversion maximale.",
+      "results": "Lancement réussi avec plus de 100 produits et 95% de satisfaction client."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "La force de notre cabinet réside dans la rééducation musculo-squelettique. Cela comprend toutes les affections liées à notre système locomoteur.",
+    "specialties": {
+      "title": "Voici les outils dans lesquels nous excellons :",
+      "items": [
+        "Rééducation post-opératoire",
+        "Thérapie manuelle",
+        "Kinésithérapie sportive",
+        "Ostéopathie (Enerki)",
+        "Dry Needling",
+        "Taping (taping sportif, kinésio- & dynamic taping)",
+        "Entraînement basé sur la vélocité"
+      ]
+    },
+    "additional": {
+      "title": "Nous excellons également dans",
+      "items": [
+        "Réactivation des personnes âgées (rééducation à la marche et prévention des chutes)",
+        "Reconditionnement après inactivité",
+        "Affections rhumatismales"
+      ]
+    }
+  },
+  "about": {
+    "mainTitle": "À Propos de FysioForce",
+    "description": [
+      "FysioForce est un cabinet de kinésithérapie qui privilégie une approche personnalisée de vos problèmes de santé en mettant l'accent sur le mouvement.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "title": "À Propos",
+    "subtitle": "Passionnés par la création d'expériences numériques exceptionnelles",
+    "experience": {
+      "title": "Expérience",
+      "description": "Années d'expérience en développement web et design"
+    },
+    "expertise": {
+      "title": "Expertise",
+      "description": "Spécialisés dans les technologies web et frameworks modernes"
+    },
+    "clients": {
+      "title": "Clients Satisfaits",
+      "description": "Projets réalisés avec succès pour des clients du monde entier"
+    },
+    "gallery": {
+      "practice": "Notre espace de traitement moderne",
+      "equipment": "Équipement de pointe",
+      "treatment": "Salles de traitement confortables"
+    }
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Trouvez les réponses aux questions courantes sur nos services",
+    "appointment": {
+      "question": "Comment se déroule le premier rendez-vous ?",
+      "answer": "Nous commençons par une bonne conversation, l'anamnèse, pour connaître l'histoire derrière vos plaintes. S'ensuit un examen physique approfondi pour avoir une vue d'ensemble de vos problèmes de santé. Avec toutes ces informations, un plan de traitement personnalisé est établi, en tenant compte de vos attentes."
+    },
+    "bring": {
+      "question": "Que dois-je apporter ?",
+      "answer": "- Prescription du médecin traitant\n- Carte d'identité ou passeport valide\n- Note adhésive de la mutuelle\n- Éventuels imageries récentes, rapports (d'opération), etc.\n- Vêtements confortables\n- Détails de l'assurance accident du travail (si accident du travail)"
+    },
+    "cost": {
+      "question": "Combien coûte le traitement ?",
+      "answer": "À compléter"
+    },
+    "payment": {
+      "question": "Comment s'effectue le paiement ?",
+      "answer": "À compléter"
+    }
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "subtitle": "Des professionnels dévoués à votre service",
+    "members": {
+      "member1": {
+        "name": "Dr. Sophie Laurent",
+        "role": "Kinésithérapeute Senior",
+        "description": "Spécialisée en rééducation sportive"
+      },
+      "member2": {
+        "name": "Marc Dubois",
+        "role": "Kinésithérapeute",
+        "description": "Expert en thérapie manuelle"
+      }
+    }
+  }
+} 
