@@ -11,7 +11,8 @@
   "team": {
     "title": "Our Team",
     "subtitle": "Dedicated professionals at your service",
-    "viewMember": "View Member"
+    "viewMember": "View Member",
+    "specialist": "Specialist"
   },
   "home": {
     "welcome": "FysioForce",
@@ -46,13 +47,15 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "subtitle": "Have a project in mind? Let's discuss how we can help bring your vision to life.",
+    "subtitle": "Making an appointment is quick and easy through our online booking tool. You can also reach us by phone or email. Below you will find all our contact details, practice location, parking facilities and opening hours.",
     "email": "Email",
     "location": "Location",
+    "bookingButton": "Book appointment online",
     "locationText": "Antwerp, Belgium",
     "instagram": "Instagram",
     "whatsapp": "WhatsApp",
-    "whatsappText": "Message on WhatsApp"
+    "whatsappText": "Message on WhatsApp",
+    "openingHours": "Opening hours: Mon – Fri "
   },
   "services": {
     "title": "Services",

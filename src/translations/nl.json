@@ -35,13 +35,15 @@
   },
   "contact": {
     "title": "Neem Contact Op",
-    "subtitle": "Heeft u een project in gedachten? Laten we bespreken hoe we uw visie tot leven kunnen brengen.",
+    "subtitle": "Een afspraak maken kan snel en eenvoudig via onze online afsprakentool. U kunt ons ook telefonisch of via e-mail bereiken. Hieronder vindt u al onze contactgegevens, de locatie van de praktijk, parkeermogelijkheden en onze openingsuren.",
     "email": "E-mail",
     "location": "Locatie",
     "locationText": "Antwerpen, België",
     "instagram": "Instagram",
     "whatsapp": "WhatsApp",
-    "whatsappText": "Bericht via WhatsApp"
+    "whatsappText": "Bericht via WhatsApp",
+    "openingHours": "Openingsuren: ma – vrij",
+    "bookingButton": "Maak direct een afspraak"
   },
   "services": {
     "title": "Diensten",
@@ -127,6 +129,7 @@
         "role": "Kinesitherapeut",
         "description": "Expert in manuele therapie"
       }
-    }
+    },
+    "specialist": "Specialist"
   }
 } 

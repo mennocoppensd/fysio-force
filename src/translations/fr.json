@@ -41,13 +41,15 @@
   },
   "contact": {
     "title": "Contactez-nous",
-    "subtitle": "Vous avez un projet en tête ? Discutons de la façon dont nous pouvons donner vie à votre vision.",
+    "subtitle": "Prendre rendez-vous est simple et rapide via notre outil de réservation en ligne. Vous pouvez également nous joindre par téléphone ou par e-mail. Vous trouverez ci-dessous toutes nos coordonnées, l'emplacement du cabinet, les possibilités de stationnement et nos horaires d'ouverture.",
     "email": "Email",
     "location": "Localisation",
+    "bookingButton": "Prendre rendez-vous en ligne",
     "locationText": "Anvers, Belgique",
     "instagram": "Instagram",
     "whatsapp": "WhatsApp",
-    "whatsappText": "Message sur WhatsApp"
+    "whatsappText": "Message sur WhatsApp",
+    "openingHours": "Heures d'ouverture: lun – ven"
   },
   "projects": {
     "title": "Nos Projets",
@@ -157,6 +159,7 @@
         "role": "Kinésithérapeute",
         "description": "Expert en thérapie manuelle"
       }
-    }
+    },
+    "specialist": "Spécialiste"
   }
 } 

@@ -12,8 +12,26 @@ const Contact = () => {
         <p className="section-description animate-fade-in delay-200">
           {t('contact.subtitle')}
         </p>
+
         <div className="contact-content">
           <div className="contact-info">
+            <div className="contact-item">
+              <div className="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+                </svg>
+              </div>
+              <h3>{t('contact.openingHours')}</h3>
+              <a 
+                href="https://your-booking-url.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="cta-button primary-btn"
+              >
+                {t('contact.bookingButton')}
+              </a>
+            </div>
+
             <div className="contact-item">
               <div className="contact-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -22,10 +40,10 @@ const Contact = () => {
               </div>
               <h3>{t('contact.email')}</h3>
               <a 
-                href="mailto:menno.coppens@telenet.be"
+                href="mailto:fysioforce@gmail.com"
                 className="contact-link"
               >
-                menno.coppens@telenet.be
+                fysioforce@gmail.com
               </a>
             </div>
 
@@ -39,12 +57,12 @@ const Contact = () => {
               </div>
               <h3>{t('contact.instagram')}</h3>
               <a 
-                href="https://www.instagram.com/coppenscreative" 
+                href="https://www.instagram.com/fysioforce" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="contact-link"
               >
-                @coppenscreative
+                @fysioforce
               </a>
             </div>
 
@@ -70,8 +88,8 @@ const Contact = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80998.59261331705!2d4.350658371850511!3d51.21922583905833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f68ebfc3887d%3A0x3eaf448482a88ab8!2sAntwerp%2C%20Belgium!5e0!3m2!1sen!2sus!4v1638123456789!5m2!1sen!2sus"
               width="100%"
-              height="450"
-              style={{ border: 0 }}
+              height="100%"
+              style={{ border: 0, display: 'block' }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

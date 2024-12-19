@@ -27,15 +27,11 @@ const Team = () => {
     },
     {
       title: "Bruno Janssens",
-      description: "E-commerce platform development",
+      description: "Specialist",
       image: "/src/assets/bruno.png",
-      tags: ["E-commerce", "Full Stack", "UI/UX"],
-      client: "Online Retailer",
-      duration: "6 months",
-      technologies: "Next.js, Stripe, PostgreSQL",
-      challenges: "Implementing a secure payment system and optimizing the checkout process for maximum conversion.",
-      results: "Successfully launched with 100+ products and achieved 95% customer satisfaction rate.",
-      link: "https://project2.com"
+      content: [
+        // Add Bruno's qualifications here
+      ],
     },
     // Add more projects...
   ];
@@ -100,11 +96,6 @@ const Team = () => {
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <div className="project-tags">
-                  {project.tags?.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="tag">{tag}</span>
-                  ))}
-                </div>
               </div>
             </div>
           ))}
