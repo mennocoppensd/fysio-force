@@ -49,7 +49,7 @@ const FAQ = () => {
                 <span className="faq-arrow">▼</span>
               </div>
               <div className="faq-answer">
-                <p>{item.answer}</p>
+                <p dangerouslySetInnerHTML={{ __html: item.answer }} />
               </div>
             </div>
           ))}

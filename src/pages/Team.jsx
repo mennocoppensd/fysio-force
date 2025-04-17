@@ -13,7 +13,7 @@ const Team = () => {
   const projects = [
     {
       title: "Mathieu Vanderroost",
-      description: "Founder PhysioForce",
+      description: "Founder FysioForce",
       image: "/mathieu.png",
       content: [
         "Master in rehabilitation sciences (2018, VUB)",

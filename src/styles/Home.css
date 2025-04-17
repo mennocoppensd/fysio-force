@@ -39,41 +39,34 @@
 
 .cta-buttons {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  justify-content: center;
   margin-top: 2rem;
 }
 
-.primary-btn, .secondary-btn {
-  padding: 1rem 2rem;
+.cta-button.primary-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.75rem 2rem;
   border-radius: 8px;
+  text-decoration: none;
   font-weight: 600;
-  transition: all var(--transition-speed) var(--transition-timing);
-  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.primary-btn {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-}
-
-.secondary-btn {
+.cta-button.secondary-btn {
   background: transparent;
-  color: var(--text-color);
+  color: var(--primary-color);
+  padding: 0.75rem 2rem;
   border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.primary-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow-color);
-}
 
-.secondary-btn:hover {
-  background: var(--primary-color);
-  color: white;
-  transform: translateY(-2px);
-}
+
 
 @media (max-width: 768px) {
   .hero h1 {

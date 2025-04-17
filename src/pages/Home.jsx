@@ -29,9 +29,17 @@ const Home = () => {
             href="https://your-booking-url.com" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="cta-button"
+            className="cta-button primary-btn"
           >
             {t('home.cta.contact')}
+          </a>
+          <a 
+            href="https://linktr.ee/your-username" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="cta-button secondary-btn"
+          >
+            {t('contact.followUs')}
           </a>
         </div>
         <div className="explore-section animate-fade-in delay-600">

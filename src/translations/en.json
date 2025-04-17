@@ -5,11 +5,12 @@
     "team": "Team",
     "values": "Approach",
     "services": "Services",
+    "rates": "Rates",
     "contact": "Contact",
     "faq": "FAQ"
   },
   "team": {
-    "title": "Our Team",
+    "title": "Team",
     "subtitle": "Dedicated professionals at your service",
     "viewMember": "View Member",
     "specialist": "Specialist"
@@ -21,7 +22,7 @@
       "contact": "Book a consultation",
       "projects": "View Projects"
     },
-    "explore": "Or explore first",
+    "explore": "Explore",
     "featured": {
       "title": "Creating Websites That Stand Out",
       "subtitle": "Modern, responsive, and tailored to your needs",
@@ -46,16 +47,18 @@
     }
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Making an appointment is quick and easy through our online booking tool. You can also reach us by phone or email. Below you will find all our contact details, practice location, parking facilities and opening hours.",
-    "email": "Email",
-    "location": "Location",
-    "bookingButton": "Book appointment online",
-    "locationText": "Antwerp, Belgium",
-    "instagram": "Instagram",
+    "title": "Contact",
+    "subtitle": "",
+    "social": "Social Media",
     "whatsapp": "WhatsApp",
     "whatsappText": "Message on WhatsApp",
-    "openingHours": "Opening hours: Mon – Fri "
+    "openingHours": "Opening Hours",
+    "hours": {
+      "weekdays": "Monday to Friday: 8:00 AM - 9:00 PM",
+      "weekend": "Saturday & Sunday: Closed"
+    },
+    "followUs": "Follow us",
+    "bookingButton": "Book an appointment"
   },
   "services": {
     "title": "Services",
@@ -103,7 +106,7 @@
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "FAQ",
     "subtitle": "Find answers to common questions about our services",
     "appointment": {
       "question": "How does the first appointment go?",
@@ -115,11 +118,35 @@
     },
     "cost": {
       "question": "How much does treatment cost?",
-      "answer": "To be completed"
+      "answer": "You can find our rates <a href='#rates' class='faq-link'>here</a>."
     },
     "payment": {
       "question": "How is payment made?",
       "answer": "To be completed"
+    }
+  },
+  "rates": {
+    "title": "Rates",
+    "subtitle": "Our rates for physiotherapy treatments",
+    "conventional": {
+      "title": "Conventional",
+      "description": "We are conventioned. This means we follow the official rates set by RIZIV.",
+      "items": [
+        {
+          "name": "First session (45-60 min)",
+          "price": "€25.00",
+          "reimbursement": "€22.26"
+        },
+        {
+          "name": "Follow-up session (30 min)",
+          "price": "€22.00",
+          "reimbursement": "€19.26"
+        }
+      ]
+    },
+    "insurance": {
+      "title": "Reimbursement",
+      "description": "Reimbursement varies depending on your health insurance. With a doctor's prescription, you receive partial reimbursement from RIZIV."
     }
   }
 } 

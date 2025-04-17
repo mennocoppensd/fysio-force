@@ -5,6 +5,7 @@
     "team": "Équipe",
     "values": "Approche",
     "services": "Services",
+    "rates": "Tarifs",
     "contact": "Contact",
     "faq": "FAQ"
   },
@@ -12,14 +13,14 @@
     "welcome": "FysioForce",
     "subtitle": "La récupération en mouvement",
     "cta": {
-      "contact": "Contactez-nous",
+      "contact": "Contact",
       "projects": "Voir les Projets"
     },
-    "explore": "Ou explorez d'abord",
+    "explore": "Explorer",
     "featured": {
       "title": "Création de Sites Web Remarquables",
       "subtitle": "Modernes, responsifs et adaptés à vos besoins",
-      "contactUs": "Contactez-nous"
+      "contactUs": "Contact"
     }
   },
   "values": {
@@ -40,16 +41,18 @@
     }
   },
   "contact": {
-    "title": "Contactez-nous",
-    "subtitle": "Prendre rendez-vous est simple et rapide via notre outil de réservation en ligne. Vous pouvez également nous joindre par téléphone ou par e-mail. Vous trouverez ci-dessous toutes nos coordonnées, l'emplacement du cabinet, les possibilités de stationnement et nos horaires d'ouverture.",
-    "email": "Email",
-    "location": "Localisation",
-    "bookingButton": "Prendre rendez-vous en ligne",
-    "locationText": "Anvers, Belgique",
-    "instagram": "Instagram",
+    "title": "Contact",
+    "subtitle": "",
+    "social": "Social Media",
     "whatsapp": "WhatsApp",
     "whatsappText": "Message sur WhatsApp",
-    "openingHours": "Heures d'ouverture: lun – ven"
+    "openingHours": "Heures d'ouverture",
+    "hours": {
+      "weekdays": "Lundi au vendredi: 8h00 - 21h00",
+      "weekend": "Samedi et dimanche: Fermé"
+    },
+    "followUs": "Suivez-nous",
+    "bookingButton": "Prendre rendez-vous"
   },
   "projects": {
     "title": "Nos Projets",
@@ -126,7 +129,7 @@
     }
   },
   "faq": {
-    "title": "Questions Fréquentes",
+    "title": "FAQ",
     "subtitle": "Trouvez les réponses aux questions courantes sur nos services",
     "appointment": {
       "question": "Comment se déroule le premier rendez-vous ?",
@@ -138,7 +141,7 @@
     },
     "cost": {
       "question": "Combien coûte le traitement ?",
-      "answer": "À compléter"
+      "answer": "Vous pouvez consulter nos tarifs <a href='#rates' class='faq-link'>ici</a>."
     },
     "payment": {
       "question": "Comment s'effectue le paiement ?",
@@ -146,7 +149,7 @@
     }
   },
   "team": {
-    "title": "Notre Équipe",
+    "title": "Team",
     "subtitle": "Des professionnels dévoués à votre service",
     "members": {
       "member1": {
@@ -161,5 +164,29 @@
       }
     },
     "specialist": "Spécialiste"
+  },
+  "rates": {
+    "title": "Tarifs",
+    "subtitle": "Nos tarifs pour les traitements de kinésithérapie",
+    "conventional": {
+      "title": "Conventionné",
+      "description": "Nous sommes conventionnés. Cela signifie que nous appliquons les tarifs officiels fixés par l'INAMI.",
+      "items": [
+        {
+          "name": "Première séance (45-60 min)",
+          "price": "€25,00",
+          "reimbursement": "€22,26"
+        },
+        {
+          "name": "Séance suivante (30 min)",
+          "price": "€22,00",
+          "reimbursement": "€19,26"
+        }
+      ]
+    },
+    "insurance": {
+      "title": "Remboursement",
+      "description": "Le remboursement varie selon votre mutuelle. Avec une prescription de votre médecin, vous bénéficiez d'un remboursement partiel de l'INAMI."
+    }
   }
 } 

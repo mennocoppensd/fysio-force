@@ -5,6 +5,7 @@
     "team": "Team",
     "values": "Aanpak",
     "services": "Diensten",
+    "rates": "Tarieven",
     "contact": "Contact",
     "faq": "FAQ"
   },
@@ -14,7 +15,7 @@
     "cta": {
       "contact": "Maak een afspraak"
     },
-    "explore": "Of verken eerst"
+    "explore": "Verken"
   },
   "values": {
     "title": "Aanpak",
@@ -34,16 +35,22 @@
     }
   },
   "contact": {
-    "title": "Neem Contact Op",
-    "subtitle": "Een afspraak maken kan snel en eenvoudig via onze online afsprakentool. U kunt ons ook telefonisch of via e-mail bereiken. Hieronder vindt u al onze contactgegevens, de locatie van de praktijk, parkeermogelijkheden en onze openingsuren.",
+    "title": "Contact",
+    "subtitle": "",
     "email": "E-mail",
     "location": "Locatie",
-    "locationText": "Antwerpen, België",
+    "locationText": "Dilbeek, België",
     "instagram": "Instagram",
+    "social": "Social Media",
     "whatsapp": "WhatsApp",
     "whatsappText": "Bericht via WhatsApp",
-    "openingHours": "Openingsuren: ma – vrij",
-    "bookingButton": "Maak direct een afspraak"
+    "openingHours": "Openingsuren",
+    "hours": {
+      "weekdays": "Maandag t/m vrijdag: 8:00 - 21:00",
+      "weekend": "Zaterdag & zondag: Gesloten"
+    },
+    "bookingButton": "Maak een afspraak",
+    "followUs": "Volg ons"
   },
   "services": {
     "title": "Diensten",
@@ -96,7 +103,7 @@
     }
   },
   "faq": {
-    "title": "Veelgestelde Vragen",
+    "title": "FAQ",
     "subtitle": "Vind antwoorden op veelvoorkomende vragen over onze diensten",
     "appointment": {
       "question": "Hoe verloopt de eerste afspraak?",
@@ -108,7 +115,7 @@
     },
     "cost": {
       "question": "Hoeveel kost de behandeling?",
-      "answer": "Nog aan te vullen"
+      "answer": "U kan onze tarieven <a href='#rates' class='faq-link'>hier</a> terugvinden."
     },
     "payment": {
       "question": "Hoe verloopt de betaling?",
@@ -116,7 +123,7 @@
     }
   },
   "team": {
-    "title": "Ons Team",
+    "title": "Team",
     "subtitle": "Toegewijde professionals tot uw dienst",
     "members": {
       "member1": {
@@ -131,5 +138,29 @@
       }
     },
     "specialist": "Specialist"
+  },
+  "rates": {
+    "title": "Tarieven",
+    "subtitle": "Onze tarieven voor kinesitherapie behandelingen",
+    "conventional": {
+      "title": "Geconventioneerd",
+      "description": "Wij zijn geconventioneerd. Dit betekent dat wij de officiële tarieven hanteren die zijn vastgelegd door het RIZIV.",
+      "items": [
+        {
+          "name": "Eerste sessie (45-60 min)",
+          "price": "€25,00",
+          "reimbursement": "€22,26"
+        },
+        {
+          "name": "Vervolgsessie (30 min)",
+          "price": "€22,00",
+          "reimbursement": "€19,26"
+        }
+      ]
+    },
+    "insurance": {
+      "title": "Terugbetaling",
+      "description": "De terugbetaling varieert afhankelijk van uw mutualiteit. Met een voorschrift van uw arts krijgt u een gedeeltelijke terugbetaling van het RIZIV."
+    }
   }
 } 

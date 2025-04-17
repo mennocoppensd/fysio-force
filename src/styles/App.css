@@ -1,27 +1,18 @@
 :root {
-  /* Light theme */
-  --primary-color: #286cff;
+  /* Main colors */
+  --primary-color: #296CFF;
   --secondary-color: #ec0000;
   --tertiary-color: #07c100;
-  --background-color: #ffffff;
-  --surface-color: #f3f4f6;
-  --text-color: #1f2937;
-  --text-secondary: #4b5563;
-  --border-color: #e5e7eb;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-
-  /* Transitions */
-  --transition-speed: 0.3s;
-  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode {
   --background-color: #111827;
   --surface-color: #1f2937;
   --text-color: #f3f4f6;
   --text-secondary: #9ca3af;
   --border-color: #374151;
   --shadow-color: rgba(0, 0, 0, 0.3);
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -48,7 +39,8 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 80px 0;
+  padding: 40px 0;
+  margin-bottom: -5vh;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s var(--transition-timing) forwards;
@@ -71,4 +63,137 @@ section {
   .container {
     padding: 0 1rem;
   }
+}
+
+/* Rates styling toevoegen */
+.rates {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.rates .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.rates .section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.rates-content {
+  display: grid;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rate-item {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.rate-item h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.rates-table {
+  display: grid;
+  gap: 1rem;
+}
+
+.rate-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.rate-row:last-child {
+  border-bottom: none;
+}
+
+.rate-info h3 {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.reimbursement {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.rate-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.section-description {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .rates .container {
+    padding: 0 1rem;
+  }
+  
+  .rates .section-title {
+    font-size: 2rem;
+  }
+}
+
+.faq-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity var(--transition-speed) var(--transition-timing);
+}
+
+.faq-link:hover {
+  opacity: 0.8;
+}
+
+/* Webkit browsers (Chrome, Safari, nieuwe Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 6px;
+  border: 3px solid var(--surface-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d7fff; /* Lichtere versie van primary color */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--surface-color);
 } 

@@ -62,11 +62,11 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { id: 'home', label: t('nav.home') },
     { id: 'about', label: t('nav.about') },
     { id: 'team', label: t('nav.team') },
     { id: 'values', label: t('nav.values') },
     { id: 'services', label: t('nav.services') },
+    { id: 'rates', label: t('nav.rates') },
     { id: 'contact', label: t('nav.contact') },
     { id: 'faq', label: t('nav.faq') }
   ];
