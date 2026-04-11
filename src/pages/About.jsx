@@ -9,19 +9,34 @@ const About = () => {
 
   const galleryImages = [
     {
-      url: "/practice1.jpg",
+      url: "/slideshow/Foto slideshow 1.jpg",
       alt: "Practice Interior",
-      caption: t('about.gallery.practice')
+      caption: "Practice Interior"
     },
     {
-      url: "/practice2.jpg",
+      url: "/slideshow/Foto slideshow 2.jpg",
       alt: "Exercise Equipment",
-      caption: t('about.gallery.equipment')
+      caption: "Exercise Equipment"
     },
     {
-      url: "/practice3.jpg",
+      url: "/slideshow/Foto slideshow 3.jpg",
       alt: "Treatment Room",
-      caption: t('about.gallery.treatment')
+      caption: "Treatment Room"
+    },
+    {
+      url: "/slideshow/Foto slideshow 4.jpg",
+      alt: "Practice Interior",
+      caption: "Practice Interior"
+    },
+    {
+      url: "/slideshow/Foto slideshow 5.jpg",
+      alt: "Exercise Equipment",
+      caption: "Exercise Equipment"
+    },
+    {
+      url: "/slideshow/Foto slideshow 6.jpg",
+      alt: "Treatment Room",
+      caption: "Treatment Room"
     }
   ];
 

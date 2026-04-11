@@ -22,7 +22,10 @@ const Home = () => {
   return (
     <div className="home">
       <div className="hero">
-        <h1 className="animate-slide-in">{t('home.welcome')}</h1>
+        <h1 className="animate-slide-in">
+          <span className="logo-fysio">Fysio</span>
+          <span className="logo-force">Force</span>
+        </h1>
         <p className="animate-fade-in delay-200">{t('home.subtitle')}</p>
         <div className="cta-buttons animate-fade-in delay-400">
           <a 

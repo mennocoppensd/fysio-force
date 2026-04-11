@@ -123,6 +123,21 @@
 .logo {
   display: flex;
   align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo-fysio {
+  color: #296cff; /* Donkerste blauw uit Logo.svg */
+  font-weight: bold;
+}
+
+.logo-force {
+  color: #38b6ff; /* Lichtste blauw uit Logo.svg */
+  font-weight: bold;
 } 
 
 .scroll-progress {

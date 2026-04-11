@@ -12,28 +12,49 @@
 }
 
 .loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loader-logo {
   width: 80px;
   height: 80px;
+  animation: heartbeat 2s ease-in-out infinite;
 }
 
-.loader svg {
-  width: 100%;
-  height: 100%;
+.loader-text {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.morph-shape {
-  fill: var(--primary-color);
-  animation: morph 2s ease-in-out infinite;
-  transform-origin: center;
+.logo-fysio {
+  color: #296cff; /* Donkerste blauw uit Logo.svg */
+  font-weight: bold;
 }
 
-@keyframes morph {
+.logo-force {
+  color: #38b6ff; /* Lichtste blauw uit Logo.svg */
+  font-weight: bold;
+}
+
+@keyframes heartbeat {
   0%, 100% {
-    rx: 0;
-    transform: rotate(0deg);
+    transform: scale(1);
   }
-  50% {
-    rx: 25;
-    transform: rotate(180deg);
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
   }
 } 

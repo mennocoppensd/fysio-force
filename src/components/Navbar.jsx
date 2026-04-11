@@ -76,8 +76,11 @@ const Navbar = () => {
       <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
       <div className="container nav-container">
         <a href="#home" className="logo" onClick={(e) => handleClick(e, 'home')}>
-          <img src="/favicon.svg" alt="FysioForce Logo" className="navbar-logo" />
-          FysioForce
+          <img src="/Logo.svg" alt="FysioForce Logo" className="navbar-logo" />
+          <span className="logo-text">
+            <span className="logo-fysio">Fysio</span>
+            <span className="logo-force">Force</span>
+          </span>
         </a>
         
         <div className="nav-right">

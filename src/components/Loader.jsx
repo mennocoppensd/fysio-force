@@ -4,16 +4,15 @@ const Loader = () => {
   return (
     <div className="loader-container">
       <div className="loader">
-        <svg viewBox="0 0 100 100">
-          <rect
-            className="morph-shape"
-            x="25"
-            y="25"
-            width="50"
-            height="50"
-            rx="0"
-          />
-        </svg>
+        <img 
+          src="/Logo.svg" 
+          alt="FysioForce Logo" 
+          className="loader-logo"
+        />
+        <div className="loader-text">
+          <span className="logo-fysio">Fysio</span>
+          <span className="logo-force">Force</span>
+        </div>
       </div>
     </div>
   );

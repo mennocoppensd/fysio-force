@@ -1,6 +1,28 @@
 .home {
   padding-top: 80px;
   overflow: hidden;
+  background-image: url('/Home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.home > * {
+  position: relative;
+  z-index: 2;
 }
 
 .hero {
@@ -18,13 +40,25 @@
   font-size: 4rem;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-fysio {
+  color: #296cff; /* Donkerste blauw uit Logo.svg */
+  font-weight: bold;
+}
+
+.logo-force {
+  color: #38b6ff; /* Lichtste blauw uit Logo.svg */
+  font-weight: bold;
 }
 
 .hero p {
   font-size: 1.5rem;
-  color: var(--text-secondary);
+  color: white;
   max-width: 600px;
   margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 
