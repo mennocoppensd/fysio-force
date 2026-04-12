@@ -5,7 +5,7 @@ const Services = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="services" className="services-section">
+    <div className="services-section">
       <div className="container">
         <h2 className="section-title">{t('services.title')}</h2>
         <p className="section-subtitle">{t('services.subtitle')}</p>
@@ -41,7 +41,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -61,12 +61,26 @@
   font-weight: bold;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  color: white;
-  max-width: 600px;
-  margin: 0 auto;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+.hero-taglines .hero-discipline {
+  font-size: clamp(1.5rem, 3.8vw, 2.05rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+  max-width: 22rem;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+.hero-taglines .hero-slogan {
+  font-size: clamp(1rem, 2.4vw, 1.22rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 22rem;
+  margin: 0;
+  line-height: 1.45;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -107,19 +121,46 @@
   transition: all 0.3s ease;
 }
 
-/* Alleen op hero: “Volg ons” beter leesbaar op drukke foto */
+/* Hero: “Maak een afspraak” en “Volg ons” — zelfde maat, typografie en hover */
+.home .cta-button.primary-btn,
 .home .cta-button.secondary-btn {
-  background: rgba(0, 0, 0, 0.42);
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.home .cta-button.primary-btn {
+  background: var(--primary-color);
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.85);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+}
+
+/* “Volg ons”: lichtblauw (Force), witte tekst — zelfde box als primaire knop */
+.home .cta-button.secondary-btn {
+  background: #38b6ff;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Zelfde hover als primaire CTA (lift + schaduw); overschrijft Contact.css secondary-hover */
+.home .cta-button.primary-btn:hover,
+.home .cta-button.secondary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .home .cta-button.secondary-btn:hover {
-  background: rgba(0, 0, 0, 0.55);
-  border-color: #fff;
+  background: #38b6ff;
+  color: #fff;
 }
 
 
@@ -137,8 +178,12 @@
     font-size: 2.5rem;
   }
 
-  .hero p {
-    font-size: 1.2rem;
+  .hero-taglines .hero-discipline {
+    font-size: clamp(1.35rem, 5vw, 1.75rem);
+  }
+
+  .hero-taglines .hero-slogan {
+    font-size: clamp(0.9rem, 3.2vw, 1.05rem);
   }
 
   .cta-buttons {

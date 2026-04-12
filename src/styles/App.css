@@ -46,6 +46,20 @@ section {
   animation: fadeInUp 0.6s var(--transition-timing) forwards;
 }
 
+/* Compactere overgang diensten → tarieven (geen dubbele 100vh door geneste section) */
+main > section#services,
+main > section#rates {
+  min-height: unset;
+}
+
+main > section#services {
+  padding-bottom: 0.75rem;
+}
+
+main > section#rates {
+  padding-top: 0.75rem;
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -68,7 +82,7 @@ section {
 /* Rates styling toevoegen */
 .rates {
   position: relative;
-  padding: 2rem 0;
+  padding: 0.75rem 0 2rem;
 }
 
 .rates .container {

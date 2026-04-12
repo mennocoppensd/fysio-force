@@ -13,13 +13,28 @@ import './i18n';
 import FAQ from './pages/FAQ';
 import Rates from './pages/Rates';
 
+const LOADER_DURATION_MS = 2000;
+const LOADER_PROGRESS_TICK_MS = 80;
+
 function App() {
   const [loading, setLoading] = useState(true);
+  const [loadProgress, setLoadProgress] = useState(0);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    setLoadProgress(0);
+    const steps = Math.ceil(LOADER_DURATION_MS / LOADER_PROGRESS_TICK_MS);
+    let step = 0;
+    const intervalId = window.setInterval(() => {
+      step += 1;
+      const next = Math.min(100, (step / steps) * 100);
+      setLoadProgress(next);
+      if (step >= steps) {
+        window.clearInterval(intervalId);
+        setLoadProgress(100);
+        setLoading(false);
+      }
+    }, LOADER_PROGRESS_TICK_MS);
+    return () => window.clearInterval(intervalId);
   }, []);
 
   return (
@@ -27,7 +42,7 @@ function App() {
       <Navbar />
       <ScrollToTop />
       {loading ? (
-        <Loader />
+        <Loader progress={loadProgress} />
       ) : (
         <main>
           <section id="home"><Home /></section>

@@ -27,8 +27,8 @@ const Home = () => {
           <span className="logo-force">Force</span>
         </h1>
         <div className="hero-taglines">
-          <p className="animate-fade-in delay-100">{t('home.discipline')}</p>
-          <p className="animate-fade-in delay-200">{t('home.subtitle')}</p>
+          <p className="hero-discipline animate-fade-in delay-100">{t('home.discipline')}</p>
+          <p className="hero-slogan animate-fade-in delay-200">{t('home.subtitle')}</p>
         </div>
         <div className="cta-buttons animate-fade-in delay-400">
           <a 

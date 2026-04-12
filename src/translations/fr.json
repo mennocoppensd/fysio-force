@@ -9,6 +9,9 @@
     "contact": "Contact",
     "faq": "FAQ"
   },
+  "loader": {
+    "ariaProgress": "Chargement du site"
+  },
   "home": {
     "welcome": "FysioForce",
     "discipline": "Kinésithérapie",
@@ -45,7 +48,7 @@
     "subtitle": "",
     "social": "Social Media",
     "whatsapp": "WhatsApp",
-    "whatsappText": "Message sur WhatsApp",
+    "whatsappText": "Message",
     "openingHours": "Heures d'ouverture",
     "hours": {
       "weekdays": "Lundi au vendredi: 8h00 - 21h00",

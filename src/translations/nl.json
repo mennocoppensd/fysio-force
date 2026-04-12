@@ -1,4 +1,7 @@
 {
+  "loader": {
+    "ariaProgress": "Website laden"
+  },
   "nav": {
     "home": "Home",
     "about": "Over ons",
@@ -43,7 +46,7 @@
     "instagram": "Instagram",
     "social": "Social Media",
     "whatsapp": "WhatsApp",
-    "whatsappText": "Bericht via WhatsApp",
+    "whatsappText": "Bericht",
     "openingHours": "Openingsuren",
     "hours": {
       "weekdays": "Maandag t/m vrijdag: 8:00 - 21:00",

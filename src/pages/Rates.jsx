@@ -6,7 +6,7 @@ const Rates = () => {
   const items = Array.isArray(conventionalItems) ? conventionalItems : [];
 
   return (
-    <section id="rates" className="rates">
+    <div className="rates">
       <div className="container">
         <h1 className="section-title">{t('rates.title')}</h1>
 
@@ -45,7 +45,7 @@ const Rates = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
