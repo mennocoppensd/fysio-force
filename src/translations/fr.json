@@ -11,12 +11,12 @@
   },
   "home": {
     "welcome": "FysioForce",
-    "subtitle": "La récupération en mouvement",
+    "discipline": "Kinésithérapie",
+    "subtitle": "Votre récupération en mouvement",
     "cta": {
-      "contact": "Contact",
+      "contact": "Prendre rendez-vous",
       "projects": "Voir les Projets"
     },
-    "explore": "Explorer",
     "featured": {
       "title": "Création de Sites Web Remarquables",
       "subtitle": "Modernes, responsifs et adaptés à vos besoins",
@@ -82,31 +82,23 @@
     "title": "Services",
     "subtitle": "La force de notre cabinet réside dans la rééducation musculo-squelettique. Cela comprend toutes les affections liées à notre système locomoteur.",
     "specialties": {
-      "title": "Voici les outils dans lesquels nous excellons :",
+      "title": "Notre offre :",
+      "osteopathyEnerki": "Ostéopathie (<enerkiLink>Enerki, https://enerki.be/</enerkiLink>)",
       "items": [
-        "Rééducation post-opératoire",
+        "Kinésithérapie du sport",
         "Thérapie manuelle",
-        "Kinésithérapie sportive",
-        "Ostéopathie (Enerki)",
+        "Ostéopathie",
+        "Rééducation post-opératoire",
         "Dry Needling",
-        "Taping (taping sportif, kinésio- & dynamic taping)",
-        "Entraînement basé sur la vélocité"
-      ]
-    },
-    "additional": {
-      "title": "Nous excellons également dans",
-      "items": [
-        "Réactivation des personnes âgées (rééducation à la marche et prévention des chutes)",
-        "Reconditionnement après inactivité",
-        "Affections rhumatismales"
+        "Taping",
+        "Rééducation générale"
       ]
     }
   },
   "about": {
     "mainTitle": "À Propos de FysioForce",
     "description": [
-      "FysioForce est un cabinet de kinésithérapie qui privilégie une approche personnalisée de vos problèmes de santé en mettant l'accent sur le mouvement.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "FysioForce est un cabinet de kinésithérapie qui privilégie une approche personnalisée de votre problème de santé, en mettant l'accent sur le mouvement."
     ],
     "title": "À Propos",
     "subtitle": "Passionnés par la création d'expériences numériques exceptionnelles",
@@ -145,35 +137,81 @@
     },
     "payment": {
       "question": "Comment s'effectue le paiement ?",
-      "answer": "À compléter"
+      "answer": "Le règlement s'effectue toujours à la fin de la séance.<br><br>Vous pouvez payer par carte bancaire via Bancontact ou au moyen d'un code QR. Vous ne payez que le ticket modérateur. Le cabinet perçoit le solde de l'honoraire via le tiers-payant avec votre mutuelle.<br><br>Tout se fait électroniquement : plus de paperasse pour vous en tant que patient !"
     }
   },
   "team": {
     "title": "Team",
     "subtitle": "Des professionnels dévoués à votre service",
-    "members": {
-      "member1": {
-        "name": "Dr. Sophie Laurent",
-        "role": "Kinésithérapeute Senior",
-        "description": "Spécialisée en rééducation sportive"
-      },
-      "member2": {
-        "name": "Marc Dubois",
-        "role": "Kinésithérapeute",
-        "description": "Expert en thérapie manuelle"
-      }
+    "viewDetails": "Voir les détails",
+    "hideDetails": "Masquer les infos",
+    "convention": {
+      "conventioned": "conventionné",
+      "nonConventioned": "déconventionné"
     },
-    "specialist": "Spécialiste"
+    "enerkiHeading": "Équipe ENERKI",
+    "enerkiSub": "Également au sein de l'équipe FysioForce.",
+    "enerkiBadge": "Équipe ENERKI",
+    "enerkiOsteoLink": "Ostéopathie (ENERKI) : <enerkiLink>enerki.be</enerkiLink>",
+    "members": [
+      {
+        "name": "Mathieu Vanderroost",
+        "convention": "nonConventioned",
+        "enerki": false,
+        "role": "Fondateur FysioForce",
+        "image": "/mathieu.png",
+        "details": [
+          "Master en sciences de la réadaptation (2018, VUB)",
+          "Master en kinésithérapie du sport (2018, VUB)",
+          "Master de spécialisation en thérapie manuelle (2021, UGent)",
+          "Dry needling (2023, The Hive)",
+          "Coach physique football (2021, Voetbal Vlaanderen)",
+          "Velocity-based training (2023, Smart Education)",
+          "Staff médical BOKA United (2017–2023) et K Diegem Sport (2023–présent)"
+        ]
+      },
+      {
+        "name": "Loes Verspecht",
+        "convention": "conventioned",
+        "enerki": false,
+        "role": "Kinésithérapeute",
+        "image": "/slideshow/Foto slideshow 2.jpg",
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        ]
+      },
+      {
+        "name": "Bruno Janssens",
+        "enerki": true,
+        "role": "Fondateur ENERKI",
+        "image": "/slideshow/Foto slideshow 3.jpg",
+        "details": [
+          "Kinésithérapie du sport (1991, …)",
+          "Ostéopathie (1996, The International Academy of Osteopathy)"
+        ]
+      },
+      {
+        "name": "Alexander Van den Bergh",
+        "enerki": true,
+        "role": "Ostéopathe",
+        "image": "/slideshow/Foto slideshow 5.jpg",
+        "details": [
+          "Ostéopathie (2019, The International Academy of Osteopathy Ghent)",
+          "Master en ostéopathie du sport (2023, Bucks New University, Londres)"
+        ]
+      }
+    ]
   },
   "rates": {
     "title": "Tarifs",
-    "subtitle": "Nos tarifs pour les traitements de kinésithérapie",
     "conventional": {
-      "title": "Conventionné",
-      "description": "Nous sommes conventionnés. Cela signifie que nous appliquons les tarifs officiels fixés par l'INAMI.",
+      "title": "Tarif conventionné (dont Loes Verspecht)",
+      "lead": "Pour une séance conventionnée, vous payez l'honoraire fixé par l'INAMI/RIZIV. Votre mutuelle rembourse une partie ; ci-dessous figurent des montants types de remboursement et de ticket modérateur.",
+      "description": "Ces montants suivent les tarifs officiels INAMI/RIZIV.",
+      "reimbursementLabel": "Remboursement (indicatif)",
       "items": [
         {
-          "name": "Première séance (45-60 min)",
+          "name": "Première séance (45–60 min)",
           "price": "€25,00",
           "reimbursement": "€22,26"
         },
@@ -184,9 +222,9 @@
         }
       ]
     },
-    "insurance": {
-      "title": "Remboursement",
-      "description": "Le remboursement varie selon votre mutuelle. Avec une prescription de votre médecin, vous bénéficiez d'un remboursement partiel de l'INAMI."
-    }
+    "nonConventionedTitle": "Tarif non conventionné",
+    "nonConventionedIntro": "Pour les soins avec des thérapeutes non conventionnés au sein de notre équipe, le tarif ci-dessous s'applique.",
+    "nonConventionedPerSession": "Par séance",
+    "nonConventioned": "€35,00"
   }
 } 

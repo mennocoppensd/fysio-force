@@ -3,42 +3,18 @@ import '../styles/About.css';
 import { useTranslation } from 'react-i18next';
 import ImageCarousel from '../components/ImageCarousel';
 
+const ABOUT_GALLERY_IMAGES = [
+  { url: '/slideshow/Foto slideshow 1.jpg', alt: 'FysioForce praktijk' },
+  { url: '/slideshow/Foto slideshow 2.jpg', alt: 'FysioForce praktijk' },
+  { url: '/slideshow/Foto slideshow 3.jpg', alt: 'FysioForce praktijk' },
+  { url: '/slideshow/Foto slideshow 4.jpg', alt: 'FysioForce praktijk' },
+  { url: '/slideshow/Foto slideshow 5.jpg', alt: 'FysioForce praktijk' },
+  { url: '/slideshow/Foto slideshow 6.jpg', alt: 'FysioForce praktijk' },
+];
+
 const About = () => {
   const observerRef = useRef(null);
   const { t } = useTranslation();
-
-  const galleryImages = [
-    {
-      url: "/slideshow/Foto slideshow 1.jpg",
-      alt: "Practice Interior",
-      caption: "Practice Interior"
-    },
-    {
-      url: "/slideshow/Foto slideshow 2.jpg",
-      alt: "Exercise Equipment",
-      caption: "Exercise Equipment"
-    },
-    {
-      url: "/slideshow/Foto slideshow 3.jpg",
-      alt: "Treatment Room",
-      caption: "Treatment Room"
-    },
-    {
-      url: "/slideshow/Foto slideshow 4.jpg",
-      alt: "Practice Interior",
-      caption: "Practice Interior"
-    },
-    {
-      url: "/slideshow/Foto slideshow 5.jpg",
-      alt: "Exercise Equipment",
-      caption: "Exercise Equipment"
-    },
-    {
-      url: "/slideshow/Foto slideshow 6.jpg",
-      alt: "Treatment Room",
-      caption: "Treatment Room"
-    }
-  ];
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -107,7 +83,7 @@ const About = () => {
             )}
           </div>
           <div className="about-gallery fade-in-element">
-            <ImageCarousel images={galleryImages} />
+            <ImageCarousel images={ABOUT_GALLERY_IMAGES} />
           </div>
         </div>
       </div>

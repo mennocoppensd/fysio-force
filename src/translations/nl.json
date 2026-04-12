@@ -11,11 +11,11 @@
   },
   "home": {
     "welcome": "FysioForce",
-    "subtitle": "Herstel in beweging",
+    "discipline": "Kinesitherapie",
+    "subtitle": "Jouw herstel in beweging",
     "cta": {
       "contact": "Maak een afspraak"
-    },
-    "explore": "Verken"
+    }
   },
   "values": {
     "title": "Aanpak",
@@ -56,31 +56,23 @@
     "title": "Diensten",
     "subtitle": "De sterkte van de praktijk ligt in musculoskeletale revalidatie. Dit houdt alle klachten in die gelinkt kunnen worden aan ons bewegingsstelsel.",
     "specialties": {
-      "title": "Hieronder de tools waar we het meest in uitblinken:",
+      "title": "Ons aanbod:",
+      "osteopathyEnerki": "Osteopathie (<enerkiLink>Enerki, https://enerki.be/</enerkiLink>)",
       "items": [
-        "Post operatieve revalidatie",
-        "Manuele therapie",
         "Sportkinesitherapie",
-        "Osteopathie (Enerki)",
+        "Manuele therapie",
+        "Osteopathie",
+        "Post operatieve revalidatie",
         "Dry Needling",
-        "Taping (sporttaping, kinesio- & dynamic taping)",
-        "Velocity based training"
-      ]
-    },
-    "additional": {
-      "title": "Waar we ook goed in zijn",
-      "items": [
-        "Reactivatie bij ouderen (gangrevalidatie en valpreventie)",
-        "Reconditionering na inactiviteit",
-        "Reumatische aandoeningen"
+        "Taping",
+        "Algemene revalidatie"
       ]
     }
   },
   "about": {
     "mainTitle": "Over FysioForce",
     "description": [
-      "FysioForce is een gedeconventioneerde kinesitherapiepraktijk die staat voor een gepersonaliseerde aanpak van uw gezondheidsproblemen met focus op beweging.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "FysioForce is een kinesitherapiepraktijk die staat voor een gepersonaliseerde aanpak van jouw gezondheidsprobleem met focus op beweging."
     ],
     "title": "Over Ons",
     "subtitle": "Gepassioneerd over het creren van uitzonderlijke digitale ervaringen",
@@ -119,35 +111,81 @@
     },
     "payment": {
       "question": "Hoe verloopt de betaling?",
-      "answer": "Nog aan te vullen"
+      "answer": "Er wordt steeds afgerekend aan het einde van een sessie.<br><br>Er kan betaald worden met de bankkaart via Bancontact of via een QR-code. Je betaalt enkel het remgeld. De praktijk verkrijgt de rest van het honorarium via de derdebetalersregeling met jouw mutualiteit.<br><br>Dit gebeurt allemaal elektronisch, dus geen papierwerk meer voor jou als patiënt!"
     }
   },
   "team": {
     "title": "Team",
     "subtitle": "Toegewijde professionals tot uw dienst",
-    "members": {
-      "member1": {
-        "name": "Dr. Sophie Laurent",
-        "role": "Senior Kinesitherapeut",
-        "description": "Gespecialiseerd in sportrevalidatie"
-      },
-      "member2": {
-        "name": "Marc Dubois",
-        "role": "Kinesitherapeut",
-        "description": "Expert in manuele therapie"
-      }
+    "viewDetails": "Meer info",
+    "hideDetails": "Verberg info",
+    "convention": {
+      "conventioned": "geconventioneerd",
+      "nonConventioned": "gedeconventioneerd"
     },
-    "specialist": "Specialist"
+    "enerkiHeading": "Team ENERKI",
+    "enerkiSub": "Ook onder het FysioForce-team.",
+    "enerkiBadge": "Team ENERKI",
+    "enerkiOsteoLink": "Osteopathie (ENERKI): <enerkiLink>enerki.be</enerkiLink>",
+    "members": [
+      {
+        "name": "Mathieu Vanderroost",
+        "convention": "nonConventioned",
+        "enerki": false,
+        "role": "Oprichter FysioForce",
+        "image": "/mathieu.png",
+        "details": [
+          "Master in revalidatiewetenschappen (2018, VUB)",
+          "Master in sportkinesitherapie (2018, VUB)",
+          "Postgraduaat Manuele Therapie (2021, UGent)",
+          "Dry needling (2023, The Hive)",
+          "Fysiek coach voetbal (2021, Voetbal Vlaanderen)",
+          "Velocity-based training (2023, Smart Education)",
+          "Medische staf BOKA United (2017–2023) en K Diegem Sport (2023–heden)"
+        ]
+      },
+      {
+        "name": "Loes Verspecht",
+        "convention": "conventioned",
+        "enerki": false,
+        "role": "Kinesitherapeut",
+        "image": "/slideshow/Foto slideshow 2.jpg",
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        ]
+      },
+      {
+        "name": "Bruno Janssens",
+        "enerki": true,
+        "role": "Oprichter ENERKI",
+        "image": "/slideshow/Foto slideshow 3.jpg",
+        "details": [
+          "Sportkinesitherapie (1991, …)",
+          "Osteopathie (1996, The International Academy of Osteopathy)"
+        ]
+      },
+      {
+        "name": "Alexander Van den Bergh",
+        "enerki": true,
+        "role": "Osteopaat",
+        "image": "/slideshow/Foto slideshow 5.jpg",
+        "details": [
+          "Osteopathie (2019, The International Academy of Osteopathy Gent)",
+          "Master Osteopathie in sport (2023, Bucks New University Londen)"
+        ]
+      }
+    ]
   },
   "rates": {
     "title": "Tarieven",
-    "subtitle": "Onze tarieven voor kinesitherapie behandelingen",
     "conventional": {
-      "title": "Geconventioneerd",
-      "description": "Wij zijn geconventioneerd. Dit betekent dat wij de officiële tarieven hanteren die zijn vastgelegd door het RIZIV.",
+      "title": "Geconventioneerd tarief (o.a. Loes Verspecht)",
+      "lead": "Bij een geconventioneerde sessie betaalt u het ereloon vastgelegd door het RIZIV. Uw mutualiteit vergoedt een deel; hieronder vindt u het typische remgeld na terugbetaling.",
+      "description": "Deze bedragen volgen de officiële RIZIV-tarieven.",
+      "reimbursementLabel": "Terugbetaling (richtbedrag)",
       "items": [
         {
-          "name": "Eerste sessie (45-60 min)",
+          "name": "Eerste sessie (45–60 min)",
           "price": "€25,00",
           "reimbursement": "€22,26"
         },
@@ -158,9 +196,9 @@
         }
       ]
     },
-    "insurance": {
-      "title": "Terugbetaling",
-      "description": "De terugbetaling varieert afhankelijk van uw mutualiteit. Met een voorschrift van uw arts krijgt u een gedeeltelijke terugbetaling van het RIZIV."
-    }
+    "nonConventionedTitle": "Gedeconventioneerd tarief",
+    "nonConventionedIntro": "Voor behandelingen bij gedeconventioneerde therapeuten binnen ons team geldt onderstaand tarief.",
+    "nonConventionedPerSession": "Per sessie",
+    "nonConventioned": "€35,00"
   }
 } 

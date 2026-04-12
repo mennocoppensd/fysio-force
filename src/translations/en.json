@@ -12,17 +12,73 @@
   "team": {
     "title": "Team",
     "subtitle": "Dedicated professionals at your service",
-    "viewMember": "View Member",
-    "specialist": "Specialist"
+    "viewDetails": "View details",
+    "hideDetails": "Hide details",
+    "convention": {
+      "conventioned": "conventioned",
+      "nonConventioned": "non-conventioned"
+    },
+    "enerkiHeading": "Team ENERKI",
+    "enerkiSub": "Also part of the FysioForce team.",
+    "enerkiBadge": "Team ENERKI",
+    "enerkiOsteoLink": "Osteopathy (ENERKI): <enerkiLink>enerki.be</enerkiLink>",
+    "members": [
+      {
+        "name": "Mathieu Vanderroost",
+        "convention": "nonConventioned",
+        "enerki": false,
+        "role": "Founder FysioForce",
+        "image": "/mathieu.png",
+        "details": [
+          "Master in rehabilitation sciences (2018, VUB)",
+          "Master in sports physiotherapy (2018, VUB)",
+          "Postgraduate degree in manual therapy (2021, UGent)",
+          "Dry needling (2023, The Hive)",
+          "Physical coach football (2021, Voetbal Vlaanderen)",
+          "Velocity-based training (2023, Smart Education)",
+          "Medical staff BOKA United (2017–2023) and K Diegem Sport (2023–present)"
+        ]
+      },
+      {
+        "name": "Loes Verspecht",
+        "convention": "conventioned",
+        "enerki": false,
+        "role": "Physiotherapist",
+        "image": "/slideshow/Foto slideshow 2.jpg",
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        ]
+      },
+      {
+        "name": "Bruno Janssens",
+        "enerki": true,
+        "role": "Founder ENERKI",
+        "image": "/slideshow/Foto slideshow 3.jpg",
+        "details": [
+          "Sports physiotherapy (1991, …)",
+          "Osteopathy (1996, The International Academy of Osteopathy)"
+        ]
+      },
+      {
+        "name": "Alexander Van den Bergh",
+        "enerki": true,
+        "role": "Osteopath",
+        "image": "/slideshow/Foto slideshow 5.jpg",
+        "details": [
+          "Osteopathy (2019, The International Academy of Osteopathy Ghent)",
+          "Master's in osteopathy in sports (2023, Bucks New University London)"
+        ]
+      }
+    ]
   },
   "home": {
     "welcome": "FysioForce",
-    "subtitle": "Recovery in motion",
+    "discipline": "Physiotherapy",
+    "subtitle": "Your recovery in motion",
     "cta": {
       "contact": "Book a consultation",
       "projects": "View Projects"
     },
-    "explore": "Explore",
     "featured": {
       "title": "Creating Websites That Stand Out",
       "subtitle": "Modern, responsive, and tailored to your needs",
@@ -64,31 +120,23 @@
     "title": "Services",
     "subtitle": "Our practice's strength lies in musculoskeletal rehabilitation. This includes all complaints that can be linked to our locomotor system.",
     "specialties": {
-      "title": "Here are the tools we excel in:",
+      "title": "What we offer:",
+      "osteopathyEnerki": "Osteopathy (<enerkiLink>Enerki, https://enerki.be/</enerkiLink>)",
       "items": [
-        "Post-operative rehabilitation",
-        "Manual therapy",
         "Sports physiotherapy",
-        "Osteopathy (Enerki)",
+        "Manual therapy",
+        "Osteopathy",
+        "Post-operative rehabilitation",
         "Dry Needling",
-        "Taping (sports taping, kinesio- & dynamic taping)",
-        "Velocity based training"
-      ]
-    },
-    "additional": {
-      "title": "We also excel in",
-      "items": [
-        "Reactivation of elderly (gait rehabilitation and fall prevention)",
-        "Reconditioning after inactivity",
-        "Rheumatic conditions"
+        "Taping",
+        "General rehabilitation"
       ]
     }
   },
   "about": {
     "mainTitle": "About FysioForce",
     "description": [
-      "FysioForce is a deconventionalized physiotherapy practice that stands for a personalised approach to your health issues with a focus on movement.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "FysioForce is a physiotherapy practice committed to a personalised approach to your health issue with a focus on movement."
     ],
     "title": "About Us",
     "subtitle": "Passionate about creating exceptional digital experiences",
@@ -122,18 +170,19 @@
     },
     "payment": {
       "question": "How is payment made?",
-      "answer": "To be completed"
+      "answer": "Payment is always settled at the end of a session.<br><br>You can pay by bank card via Bancontact or using a QR code. You only pay the co-payment (remgeld). The practice receives the remainder of the fee through the third-party payer scheme with your health insurance fund.<br><br>This is all handled electronically, so there is no paperwork for you as a patient."
     }
   },
   "rates": {
     "title": "Rates",
-    "subtitle": "Our rates for physiotherapy treatments",
     "conventional": {
-      "title": "Conventional",
-      "description": "We are conventioned. This means we follow the official rates set by RIZIV.",
+      "title": "Conventioned rate (including Loes Verspecht)",
+      "lead": "For a conventioned session you pay the fee set by the RIZIV. Your health insurance fund reimburses part; below you will find typical reimbursement and co-payment amounts.",
+      "description": "These amounts follow the official RIZIV tariffs.",
+      "reimbursementLabel": "Reimbursement (indicative)",
       "items": [
         {
-          "name": "First session (45-60 min)",
+          "name": "First session (45–60 min)",
           "price": "€25.00",
           "reimbursement": "€22.26"
         },
@@ -144,9 +193,9 @@
         }
       ]
     },
-    "insurance": {
-      "title": "Reimbursement",
-      "description": "Reimbursement varies depending on your health insurance. With a doctor's prescription, you receive partial reimbursement from RIZIV."
-    }
+    "nonConventionedTitle": "Non-conventioned rate",
+    "nonConventionedIntro": "For treatments with non-conventioned therapists in our team, the rate below applies.",
+    "nonConventionedPerSession": "Per session",
+    "nonConventioned": "€35,00"
   }
 } 

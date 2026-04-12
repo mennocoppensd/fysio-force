@@ -1,40 +1,24 @@
-import { useState, useEffect, useRef } from 'react';
-import ProjectModal from '../components/ProjectModal';
+import { useState, useEffect, useRef, useMemo, Fragment } from 'react';
 import '../styles/Projects.css';
 import '../styles/Team.css';
-import { getScrollbarWidth } from '../utils/scrollbarWidth';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+
+const memberDisplayTitle = (member, t) => {
+  if (member.convention) {
+    return `${member.name} – ${t(`team.convention.${member.convention}`)}`;
+  }
+  return member.name;
+};
 
 const Team = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState(null);
   const observerRef = useRef(null);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-  const projects = [
-    {
-      title: "Mathieu Vanderroost",
-      description: "Founder FysioForce",
-      image: "/mathieu.png",
-      content: [
-        "Master in rehabilitation sciences (2018, VUB)",
-        "Master in sports physiotherapy (2018, VUB)",
-        "Postgraduate degree in manual therapy (2021, UGent)",
-        "Dry needling (2023, The Hive)",
-        "Physical coach football (2021, Voetbal Vlaanderen)",
-        "Velocity-based training (2023, Smart Education)",
-        "Medical staff BOKA United (2017 - 2023) and K Diegem Sport (2023 - present)"
-      ],
-    },
-    {
-      title: "Bruno Janssens",
-      description: "Specialist",
-      image: "/src/assets/bruno.png",
-      content: [
-        // Add Bruno's qualifications here
-      ],
-    },
-    // Add more projects...
-  ];
+  const members = useMemo(() => {
+    const list = t('team.members', { returnObjects: true });
+    return Array.isArray(list) ? list : [];
+  }, [t, i18n.language]);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -48,7 +32,7 @@ const Team = () => {
       { threshold: 0.1 }
     );
 
-    const cards = document.querySelectorAll('.project-card');
+    const cards = document.querySelectorAll('.team .team-card-wrapper');
     cards.forEach((card) => observerRef.current.observe(card));
 
     return () => {
@@ -56,16 +40,10 @@ const Team = () => {
         observerRef.current.disconnect();
       }
     };
-  }, []);
+  }, [members]);
 
-  const handleProjectClick = (project) => {
-    setSelectedProject(project);
-    document.documentElement.style.setProperty('--scrollbar-width', `${getScrollbarWidth()}px`);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedProject(null);
-    document.documentElement.style.removeProperty('--scrollbar-width');
+  const toggleExpanded = (index) => {
+    setExpandedIndex((prev) => (prev === index ? null : index));
   };
 
   return (
@@ -76,40 +54,104 @@ const Team = () => {
           {t('team.subtitle')}
         </p>
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div 
-              key={index} 
-              className="project-card"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-                <div className="project-overlay">
-                  <button 
-                    className="view-project"
-                    onClick={() => handleProjectClick(project)}
-                  >
-                    View Details
-                  </button>
+          {members.map((member, index) => {
+            const details = member.details ?? [];
+            const hasDetails = details.length > 0;
+            const isOpen = expandedIndex === index;
+
+            return (
+              <Fragment key={`${member.name}-${index}`}>
+                {member.enerki && !members[index - 1]?.enerki && (
+                  <div className="team-subsection-heading">
+                    <h3>{t('team.enerkiHeading')}</h3>
+                    <p>{t('team.enerkiSub')}</p>
+                    <p className="team-enerki-link-wrap">
+                      <Trans
+                        i18nKey="team.enerkiOsteoLink"
+                        components={{
+                          enerkiLink: (
+                            <a
+                              href="https://enerki.be/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            />
+                          ),
+                        }}
+                      />
+                    </p>
+                  </div>
+                )}
+                <div
+                  className="team-card-wrapper project-card"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="team-card-top">
+                    <div className="project-image">
+                      <img src={member.image} alt={member.name} />
+                    </div>
+                    <div className="project-content">
+                      <h3>{memberDisplayTitle(member, t)}</h3>
+                      {member.enerki && (
+                        <span className="team-badge-enerki">{t('team.enerkiBadge')}</span>
+                      )}
+                      <p>{member.role}</p>
+                      {hasDetails && (
+                        <button
+                          type="button"
+                          className={`team-toggle-btn${isOpen ? ' team-toggle-btn--hide' : ''}`}
+                          onClick={() => toggleExpanded(index)}
+                          aria-expanded={isOpen}
+                        >
+                          {isOpen ? (
+                            <span className="team-toggle-hide">
+                              <svg
+                                className="team-toggle-arrow-up"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden
+                              >
+                                <path
+                                  d="M6 15l6-6 6 6"
+                                  stroke="currentColor"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                              {t('team.hideDetails')}
+                            </span>
+                          ) : (
+                            <span>{t('team.viewDetails')}</span>
+                          )}
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  {hasDetails && (
+                    <div className={`team-expand${isOpen ? ' is-open' : ''}`}>
+                      <div className="team-expand-measure">
+                        <div className="team-expand-inner">
+                          {details.map((item, i) => (
+                            <p key={i} className="team-expand-line">
+                              {item}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </div>
-              <div className="project-content">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
-            </div>
-          ))}
+              </Fragment>
+            );
+          })}
         </div>
       </div>
-
-      {selectedProject && (
-        <ProjectModal 
-          project={selectedProject} 
-          onClose={handleCloseModal}
-        />
-      )}
     </section>
   );
 };
 
-export default Team; 
+export default Team;

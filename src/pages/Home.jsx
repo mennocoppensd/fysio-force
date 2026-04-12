@@ -26,7 +26,10 @@ const Home = () => {
           <span className="logo-fysio">Fysio</span>
           <span className="logo-force">Force</span>
         </h1>
-        <p className="animate-fade-in delay-200">{t('home.subtitle')}</p>
+        <div className="hero-taglines">
+          <p className="animate-fade-in delay-100">{t('home.discipline')}</p>
+          <p className="animate-fade-in delay-200">{t('home.subtitle')}</p>
+        </div>
         <div className="cta-buttons animate-fade-in delay-400">
           <a 
             href="https://your-booking-url.com" 
@@ -45,8 +48,7 @@ const Home = () => {
             {t('contact.followUs')}
           </a>
         </div>
-        <div className="explore-section animate-fade-in delay-600">
-          <p>{t('home.explore')}</p>
+        <div className="explore-section animate-fade-in delay-500">
           <div className="explore-arrow">
             <svg 
               width="24" 

@@ -9,7 +9,7 @@ const ProjectModal = ({ project, onClose }) => {
           <h2>{project.title}</h2>
           <p>{project.description}</p>
         </div>
-        {project.content && (
+        {project.content && project.content.length > 0 && (
           <div className="project-details">
             {project.content.map((item, index) => (
               <p key={index} className="detail-item">{item}</p>

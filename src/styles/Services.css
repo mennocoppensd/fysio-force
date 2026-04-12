@@ -25,8 +25,7 @@
   margin: 0 auto;
 }
 
-.specialties h3,
-.additional-services h3 {
+.specialties h3 {
   color: var(--text-color);
   margin-bottom: 2rem;
   font-size: 1.8rem;
@@ -47,7 +46,8 @@
   transition: all var(--transition-speed) var(--transition-timing);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -74,20 +74,6 @@
   opacity: 0.1;
 }
 
-.service-icon {
-  width: 32px;
-  height: 32px;
-  color: var(--primary-color);
-  flex-shrink: 0;
-  position: relative;
-  z-index: 2;
-  transition: transform var(--transition-speed) var(--transition-timing);
-}
-
-.service-card:hover .service-icon {
-  transform: scale(1.1) rotate(5deg);
-}
-
 .service-card p {
   color: var(--text-color);
   margin: 0;
@@ -96,29 +82,15 @@
   z-index: 2;
 }
 
-.services-list {
-  display: grid;
-  gap: 1rem;
-}
-
-.service-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1rem;
-  background: var(--surface-color);
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.service-item:hover {
-  transform: translateX(10px);
-}
-
-.service-bullet {
+.services-enerki-link {
   color: var(--primary-color);
-  font-size: 1.5rem;
-  line-height: 1;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.services-enerki-link:hover {
+  opacity: 0.88;
 }
 
 .fade-in-element {
@@ -141,8 +113,7 @@
     grid-template-columns: 1fr;
   }
 
-  .service-card,
-  .service-item {
+  .service-card {
     padding: 1rem;
   }
 } 

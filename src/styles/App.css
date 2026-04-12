@@ -152,6 +152,13 @@ section {
   margin-right: auto;
 }
 
+.rates-lead {
+  color: var(--text-color);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0 0 0.75rem;
+}
+
 @media (max-width: 768px) {
   .rates .container {
     padding: 0 1rem;
