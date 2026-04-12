@@ -83,7 +83,7 @@
     "subtitle": "La force de notre cabinet réside dans la rééducation musculo-squelettique. Cela comprend toutes les affections liées à notre système locomoteur.",
     "specialties": {
       "title": "Notre offre :",
-      "osteopathyEnerki": "Ostéopathie (<enerkiLink>Enerki, https://enerki.be/</enerkiLink>)",
+      "osteopathyEnerki": "Ostéopathie <enerkiLink>enerki.be</enerkiLink>",
       "items": [
         "Kinésithérapie du sport",
         "Thérapie manuelle",
@@ -149,10 +149,10 @@
       "conventioned": "conventionné",
       "nonConventioned": "déconventionné"
     },
-    "enerkiHeading": "Équipe ENERKI",
-    "enerkiSub": "Également au sein de l'équipe FysioForce.",
-    "enerkiBadge": "Équipe ENERKI",
-    "enerkiOsteoLink": "Ostéopathie (ENERKI) : <enerkiLink>enerki.be</enerkiLink>",
+    "enerkiHeading": "ENERKI",
+    "enerkiSub": "Fait également partie de l'équipe FysioForce.",
+    "enerkiBadge": "ENERKI",
+    "enerkiOsteoLink": "Ostéopathie <enerkiLink>enerki.be</enerkiLink>",
     "members": [
       {
         "name": "Mathieu Vanderroost",
@@ -167,7 +167,8 @@
           "Dry needling (2023, The Hive)",
           "Coach physique football (2021, Voetbal Vlaanderen)",
           "Velocity-based training (2023, Smart Education)",
-          "Staff médical BOKA United (2017–2023) et K Diegem Sport (2023–présent)"
+          "Staff médical K Diegem Sport (2023–2026)",
+          "Staff médical & coaching physique BOKA United (2017–2023, 2026 – présent)"
         ]
       },
       {
@@ -175,7 +176,7 @@
         "convention": "conventioned",
         "enerki": false,
         "role": "Kinésithérapeute",
-        "image": "/slideshow/Foto slideshow 2.jpg",
+        "image": "/team-placeholder-loes.svg",
         "details": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
         ]

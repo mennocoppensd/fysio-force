@@ -111,6 +111,13 @@
 
 
 @media (max-width: 768px) {
+  /* Hero-foto: iets inzoomen en anker naar beneden = minder plafond; desktop blijft .home defaults */
+  .home {
+    background-attachment: scroll;
+    background-size: 118%;
+    background-position: center 68%;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }

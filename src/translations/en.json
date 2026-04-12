@@ -18,10 +18,10 @@
       "conventioned": "conventioned",
       "nonConventioned": "non-conventioned"
     },
-    "enerkiHeading": "Team ENERKI",
-    "enerkiSub": "Also part of the FysioForce team.",
-    "enerkiBadge": "Team ENERKI",
-    "enerkiOsteoLink": "Osteopathy (ENERKI): <enerkiLink>enerki.be</enerkiLink>",
+    "enerkiHeading": "ENERKI",
+    "enerkiSub": "Also forms part of the FysioForce team.",
+    "enerkiBadge": "ENERKI",
+    "enerkiOsteoLink": "Osteopathy <enerkiLink>enerki.be</enerkiLink>",
     "members": [
       {
         "name": "Mathieu Vanderroost",
@@ -36,7 +36,8 @@
           "Dry needling (2023, The Hive)",
           "Physical coach football (2021, Voetbal Vlaanderen)",
           "Velocity-based training (2023, Smart Education)",
-          "Medical staff BOKA United (2017–2023) and K Diegem Sport (2023–present)"
+          "Medical staff K Diegem Sport (2023–2026)",
+          "Medical staff & physical coaching BOKA United (2017–2023, 2026 – present)"
         ]
       },
       {
@@ -44,7 +45,7 @@
         "convention": "conventioned",
         "enerki": false,
         "role": "Physiotherapist",
-        "image": "/slideshow/Foto slideshow 2.jpg",
+        "image": "/team-placeholder-loes.svg",
         "details": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
         ]
@@ -121,7 +122,7 @@
     "subtitle": "Our practice's strength lies in musculoskeletal rehabilitation. This includes all complaints that can be linked to our locomotor system.",
     "specialties": {
       "title": "What we offer:",
-      "osteopathyEnerki": "Osteopathy (<enerkiLink>Enerki, https://enerki.be/</enerkiLink>)",
+      "osteopathyEnerki": "Osteopathy <enerkiLink>enerki.be</enerkiLink>",
       "items": [
         "Sports physiotherapy",
         "Manual therapy",
