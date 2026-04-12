@@ -152,6 +152,14 @@
   flex: 1;
 }
 
+.team .team-card-wrapper .project-image {
+  height: 380px;
+}
+
+.team .team-card-wrapper .project-image img {
+  object-position: center top;
+}
+
 .team .team-card-wrapper .project-content > p {
   margin-bottom: 0;
 }
@@ -240,6 +248,12 @@
 
 .team-expand-line:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .team .team-card-wrapper .project-image {
+    height: 300px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

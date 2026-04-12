@@ -24,7 +24,7 @@ const Contact = () => {
 
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/jouw-nummer" // Vervang met je WhatsApp nummer
+            href="https://wa.me/32496112545" // Vervang met je WhatsApp nummer
             target="_blank" 
             rel="noopener noreferrer" 
             className="contact-item"

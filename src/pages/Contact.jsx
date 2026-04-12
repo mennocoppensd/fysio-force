@@ -63,7 +63,7 @@ const Contact = () => {
               </div>
               <h3>{t('contact.whatsapp')}</h3>
               <a 
-                href="https://wa.me/yourphonenumber"
+                href="https://wa.me/32496112545"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="cta-button secondary-btn"
