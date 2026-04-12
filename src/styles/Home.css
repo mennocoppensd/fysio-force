@@ -107,15 +107,30 @@
   transition: all 0.3s ease;
 }
 
+/* Alleen op hero: “Volg ons” beter leesbaar op drukke foto */
+.home .cta-button.secondary-btn {
+  background: rgba(0, 0, 0, 0.42);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.home .cta-button.secondary-btn:hover {
+  background: rgba(0, 0, 0, 0.55);
+  border-color: #fff;
+}
+
 
 
 
 @media (max-width: 768px) {
-  /* Hero-foto: iets inzoomen en anker naar beneden = minder plafond; desktop blijft .home defaults */
+  /* Hero-foto: sterker inzoomen + anker naar beneden; desktop blijft .home defaults */
   .home {
     background-attachment: scroll;
-    background-size: 118%;
-    background-position: center 68%;
+    background-size: 152%;
+    background-position: center 72%;
   }
 
   .hero h1 {
@@ -298,17 +313,18 @@
   justify-content: center;
 }
 
-.scroll-arrow {
-  color: var(--primary-color);
+.home .scroll-arrow {
+  color: #fff;
   opacity: 1;
   transition: opacity 0.3s ease, transform 0.3s ease;
   width: 24px;
   height: 24px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
 }
 
 /* Add scroll-based animation */
 @media (min-height: 500px) {
-  .scroll-arrow {
+  .home .scroll-arrow {
     opacity: calc(1 - (var(--scroll-percentage, 0) * 2));
     transform: translateY(calc(var(--scroll-percentage, 0) * 50px));
   }

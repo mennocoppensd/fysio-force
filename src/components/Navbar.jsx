@@ -14,37 +14,59 @@ const Navbar = () => {
   );
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+    const sectionIds = [
+      'home',
+      'about',
+      'team',
+      'values',
+      'services',
+      'rates',
+      'contact',
+      'faq'
+    ];
 
-      const sections = document.querySelectorAll('section');
-      const scrollPosition = window.scrollY + 100;
+    const getNavOffset = () => {
+      const nav = document.querySelector('.navbar');
+      return (nav?.offsetHeight ?? 80) + 24;
+    };
+
+    const updateActiveFromScroll = () => {
+      setIsScrolled(window.scrollY > 20);
 
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
       setScrollProgress(scrolled);
 
-      if (window.scrollY < 50) {
-        setActiveSection('home');
-        return;
+      const trigger = window.scrollY + getNavOffset();
+      let active = 'home';
+
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top + window.scrollY;
+        if (trigger >= top) {
+          active = id;
+        }
       }
 
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < (sectionTop + sectionHeight)
-        ) {
-          setActiveSection(section.id);
-        }
-      });
+      setActiveSection(active);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    updateActiveFromScroll();
+    window.addEventListener('scroll', updateActiveFromScroll, { passive: true });
+    window.addEventListener('resize', updateActiveFromScroll);
+
+    /* <main> mount pas na Loader (~2s); extra ticks na paint */
+    const resyncDelays = [0, 100, 500, 1200, 2100, 2800].map((ms) =>
+      window.setTimeout(updateActiveFromScroll, ms)
+    );
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveFromScroll);
+      window.removeEventListener('resize', updateActiveFromScroll);
+      resyncDelays.forEach(clearTimeout);
+    };
   }, []);
 
   const handleClick = (e, sectionId) => {
