@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         <div className="cta-buttons animate-fade-in delay-400">
           <a 
-            href="https://your-booking-url.com" 
+            href={t('contact.bookingUrl')} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="cta-button primary-btn"

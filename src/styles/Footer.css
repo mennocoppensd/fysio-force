@@ -1,0 +1,52 @@
+.site-footer {
+  padding: 2.25rem 0 2.5rem;
+  border-top: 1px solid var(--border-color);
+  background: var(--surface-color);
+  margin-top: 2rem;
+}
+
+.site-footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .site-footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.site-footer-brand {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-footer-brand-fysio {
+  color: #296cff;
+}
+
+.site-footer-brand-force {
+  color: #38b6ff;
+}
+
+.site-footer-rights {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 36rem;
+}
+
+@media (min-width: 640px) {
+  .site-footer-rights {
+    text-align: right;
+  }
+}

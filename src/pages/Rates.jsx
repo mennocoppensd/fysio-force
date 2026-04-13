@@ -26,22 +26,33 @@ const Rates = () => {
 
           <div className="rate-item">
             <h2>{t('rates.conventional.title')}</h2>
-            <p className="rates-lead">{t('rates.conventional.lead')}</p>
-            <p className="description">{t('rates.conventional.description')}</p>
+            <p className="rates-lead">{t('rates.conventional.intro')}</p>
+            <p className="rates-riziv-link-wrap">
+              <a
+                href={t('rates.conventional.rizivLinkUrl')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rates-riziv-link"
+              >
+                {t('rates.conventional.rizivLinkLabel')}
+              </a>
+            </p>
 
-            <div className="rates-table">
-              {items.map((item, index) => (
-                <div key={index} className="rate-row">
-                  <div className="rate-info">
-                    <h3>{item.name}</h3>
-                    <p className="reimbursement">
-                      {t('rates.conventional.reimbursementLabel')}: {item.reimbursement}
-                    </p>
+            {items.length > 0 && (
+              <div className="rates-table">
+                {items.map((item, index) => (
+                  <div key={index} className="rate-row">
+                    <div className="rate-info">
+                      <h3>{item.name}</h3>
+                      <p className="reimbursement">
+                        {t('rates.conventional.reimbursementLabel')}: {item.reimbursement}
+                      </p>
+                    </div>
+                    <div className="rate-price">{item.price}</div>
                   </div>
-                  <div className="rate-price">{item.price}</div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

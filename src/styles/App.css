@@ -31,6 +31,17 @@ body {
               color var(--transition-speed) var(--transition-timing);
 }
 
+.app-main {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.app-main--ready {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -50,14 +61,6 @@ section {
 main > section#services,
 main > section#rates {
   min-height: unset;
-}
-
-main > section#services {
-  padding-bottom: 0.75rem;
-}
-
-main > section#rates {
-  padding-top: 0.75rem;
 }
 
 /* Animations */
@@ -171,6 +174,22 @@ main > section#rates {
   font-size: 1.02rem;
   line-height: 1.6;
   margin: 0 0 0.75rem;
+}
+
+.rates-riziv-link-wrap {
+  margin: 0 0 0.25rem;
+}
+
+.rates-riziv-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-word;
+}
+
+.rates-riziv-link:hover {
+  opacity: 0.88;
 }
 
 @media (max-width: 768px) {

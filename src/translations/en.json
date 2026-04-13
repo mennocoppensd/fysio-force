@@ -1,4 +1,7 @@
 {
+  "footer": {
+    "copyright": "© {{year}} FysioForce. All rights reserved."
+  },
   "nav": {
     "home": "Home",
     "about": "About us",
@@ -31,16 +34,17 @@
         "convention": "nonConventioned",
         "enerki": false,
         "role": "Founder FysioForce",
-        "image": "/mathieu.png",
+        "image": "/teamvoorstelling%20Mathieu.jpg",
+        "imageObjectPosition": "center 54%",
+        "imageScale": 1.12,
         "details": [
-          "Master in rehabilitation sciences (2018, VUB)",
-          "Master in sports physiotherapy (2018, VUB)",
-          "Postgraduate degree in manual therapy (2021, UGent)",
+          "Master in rehabilitation sciences and physiotherapy, specialisation in sports physiotherapy (2018, VUB)",
+          "Postgraduate certificate in manual therapy (2021, UGent)",
+          "Physical coach football (2021, Flemish Coaching School)",
           "Dry needling (2023, The Hive)",
-          "Physical coach football (2021, Voetbal Vlaanderen)",
           "Velocity-based training (2023, Smart Education)",
-          "Medical staff K Diegem Sport (2023–2026)",
-          "Medical staff & physical coaching BOKA United (2017–2023, 2026 – present)"
+          "Head Medical Staff K Diegem Sport (2023–2026)",
+          "Head Medical Staff & Physical Coach BOKA United (2017–2023, 2026 – present)"
         ]
       },
       {
@@ -50,7 +54,10 @@
         "role": "Physiotherapist",
         "image": "/team-placeholder-loes.svg",
         "details": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+          "Master in rehabilitation sciences and physiotherapy, specialisation in paediatrics (2019, UGent)",
+          "Postgraduate certificate in paediatric rehabilitation for neurological conditions; Bobath training (2021, UGent)",
+          "Manual therapy upper spine: cervical–thoracic (2026, SmartEducation)",
+          "The Shoulder: master class (2026, Ann Cools, The Hive)"
         ]
       },
       {
@@ -118,7 +125,14 @@
       "weekend": "Saturday & Sunday: Closed"
     },
     "followUs": "Follow us",
-    "bookingButton": "Book an appointment"
+    "bookingButton": "Book an appointment",
+    "bookingUrl": "https://www.q-top.be/online-planner-v2/NL/?root=kq54822",
+    "addressLabel": "Address",
+    "addressStreet": "Stationstraat 312",
+    "addressCity": "1700 Dilbeek, Belgium",
+    "openInMaps": "Open in Google Maps",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Stationstraat+312%2C+1700+Dilbeek%2C+Belgium",
+    "mapEmbedTitle": "Map — FysioForce Dilbeek"
   },
   "services": {
     "title": "Services",
@@ -180,22 +194,10 @@
   "rates": {
     "title": "Rates",
     "conventional": {
-      "title": "Conventioned rate (including Loes Verspecht)",
-      "lead": "For a conventioned session you pay the fee set by the RIZIV. Your health insurance fund reimburses part; below you will find typical reimbursement and co-payment amounts.",
-      "description": "These amounts follow the official RIZIV tariffs.",
-      "reimbursementLabel": "Reimbursement (indicative)",
-      "items": [
-        {
-          "name": "First session (45–60 min)",
-          "price": "€25.00",
-          "reimbursement": "€22.26"
-        },
-        {
-          "name": "Follow-up session (30 min)",
-          "price": "€22.00",
-          "reimbursement": "€19.26"
-        }
-      ]
+      "title": "Conventioned rate",
+      "intro": "The fee per session varies depending on the clinical situation. You can find details on the RIZIV website. Below is a link to the most recent RIZIV publication:",
+      "rizivLinkLabel": "RIZIV tariffs",
+      "rizivLinkUrl": "https://www.riziv.fgov.be/nl/thema-s/verzorging-kosten-en-terugbetaling/wat-het-ziekenfonds-terugbetaalt/individuele-verzorging/honoraria-prijzen-en-vergoedingen/honoraria-prijzen-en-tegemoetkomingen-van-kinesitherapeuten"
     },
     "nonConventionedTitle": "Non-conventioned rate",
     "nonConventionedIntro": "For treatments with non-conventioned therapists in our team, the rate below applies.",

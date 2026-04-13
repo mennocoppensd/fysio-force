@@ -9,6 +9,16 @@
   align-items: center;
   background: var(--background-color);
   z-index: 9999;
+  transition: opacity 0.42s ease, visibility 0.42s ease;
+}
+
+.loader-container.loader-container--exiting {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-container.loader-container--exiting .loader-logo {
+  animation: none;
 }
 
 .loader {

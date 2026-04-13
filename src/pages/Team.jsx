@@ -87,7 +87,21 @@ const Team = () => {
                 >
                   <div className="team-card-top">
                     <div className="project-image">
-                      <img src={member.image} alt={member.name} />
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        style={{
+                          ...(member.imageObjectPosition && {
+                            objectPosition: member.imageObjectPosition,
+                          }),
+                          ...(member.imageScale
+                            ? {
+                                transform: `scale(${member.imageScale})`,
+                                transformOrigin: 'center center',
+                              }
+                            : {}),
+                        }}
+                      />
                     </div>
                     <div className="project-content">
                       <h3>{memberDisplayTitle(member, t)}</h3>

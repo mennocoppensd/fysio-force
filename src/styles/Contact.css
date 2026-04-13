@@ -84,11 +84,88 @@
   color: var(--text-secondary);
 }
 
+.contact-map-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-height: 0;
+}
+
+.contact-address-panel {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  padding: 1.35rem 1.5rem;
+  background: var(--surface-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  border-left: 4px solid var(--primary-color);
+  text-align: left;
+}
+
+.contact-address-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  margin-top: 0.1rem;
+  color: var(--primary-color);
+}
+
+.contact-address-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-address-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-address-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 0.45rem;
+}
+
+.contact-address-street {
+  margin: 0 0 0.2rem;
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.35;
+}
+
+.contact-address-city {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.contact-address-maps {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+.contact-address-maps:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
 .map-container {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 6px var(--shadow-color);
-  height: 100%;
+  flex: 1;
   min-height: 450px;
   position: relative;
 }

@@ -1,4 +1,7 @@
 {
+  "footer": {
+    "copyright": "© {{year}} FysioForce. Tous droits réservés."
+  },
   "nav": {
     "home": "Accueil",
     "about": "À Propos",
@@ -55,7 +58,14 @@
       "weekend": "Samedi et dimanche: Fermé"
     },
     "followUs": "Suivez-nous",
-    "bookingButton": "Prendre rendez-vous"
+    "bookingButton": "Prendre rendez-vous",
+    "bookingUrl": "https://www.q-top.be/online-planner-v2/FR/?root=kq54822",
+    "addressLabel": "Adresse",
+    "addressStreet": "Stationstraat 312",
+    "addressCity": "1700 Dilbeek, Belgique",
+    "openInMaps": "Ouvrir dans Google Maps",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Stationstraat+312%2C+1700+Dilbeek%2C+Belgium",
+    "mapEmbedTitle": "Carte — FysioForce Dilbeek"
   },
   "projects": {
     "title": "Nos Projets",
@@ -162,16 +172,17 @@
         "convention": "nonConventioned",
         "enerki": false,
         "role": "Fondateur FysioForce",
-        "image": "/mathieu.png",
+        "image": "/teamvoorstelling%20Mathieu.jpg",
+        "imageObjectPosition": "center 54%",
+        "imageScale": 1.12,
         "details": [
-          "Master en sciences de la réadaptation (2018, VUB)",
-          "Master en kinésithérapie du sport (2018, VUB)",
+          "Master en sciences de la réadaptation et kinésithérapie, spécialisation kinésithérapie du sport (2018, VUB)",
           "Master de spécialisation en thérapie manuelle (2021, UGent)",
+          "Coach physique football (2021, Vlaamse Trainer School)",
           "Dry needling (2023, The Hive)",
-          "Coach physique football (2021, Voetbal Vlaanderen)",
           "Velocity-based training (2023, Smart Education)",
-          "Staff médical K Diegem Sport (2023–2026)",
-          "Staff médical & coaching physique BOKA United (2017–2023, 2026 – présent)"
+          "Chef du staff médical, K Diegem Sport (2023–2026)",
+          "Chef du staff médical & coach physique, BOKA United (2017–2023, 2026 – présent)"
         ]
       },
       {
@@ -181,7 +192,10 @@
         "role": "Kinésithérapeute",
         "image": "/team-placeholder-loes.svg",
         "details": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+          "Master en sciences de la réadaptation et kinésithérapie, spécialisation pédiatrie (2019, UGent)",
+          "Master en réadaptation pédiatrique en pathologies neurologiques ; formation Bobath (2021, UGent)",
+          "Thérapie manuelle upper spine : cervico-thoracique (2026, SmartEducation)",
+          "The Shoulder : master class (2026, Ann Cools, The Hive)"
         ]
       },
       {
@@ -209,22 +223,10 @@
   "rates": {
     "title": "Tarifs",
     "conventional": {
-      "title": "Tarif conventionné (dont Loes Verspecht)",
-      "lead": "Pour une séance conventionnée, vous payez l'honoraire fixé par l'INAMI/RIZIV. Votre mutuelle rembourse une partie ; ci-dessous figurent des montants types de remboursement et de ticket modérateur.",
-      "description": "Ces montants suivent les tarifs officiels INAMI/RIZIV.",
-      "reimbursementLabel": "Remboursement (indicatif)",
-      "items": [
-        {
-          "name": "Première séance (45–60 min)",
-          "price": "€25,00",
-          "reimbursement": "€22,26"
-        },
-        {
-          "name": "Séance suivante (30 min)",
-          "price": "€22,00",
-          "reimbursement": "€19,26"
-        }
-      ]
+      "title": "Tarif conventionné",
+      "intro": "L'honoraire par séance varie selon la situation pathologique. Vous pouvez consulter ces informations sur le site de l'INAMI/RIZIV. Vous trouverez ci-dessous le lien vers la publication la plus récente :",
+      "rizivLinkLabel": "Tarifs RIZIV (kinésithérapeutes)",
+      "rizivLinkUrl": "https://www.riziv.fgov.be/nl/thema-s/verzorging-kosten-en-terugbetaling/wat-het-ziekenfonds-terugbetaalt/individuele-verzorging/honoraria-prijzen-en-vergoedingen/honoraria-prijzen-en-tegemoetkomingen-van-kinesitherapeuten"
     },
     "nonConventionedTitle": "Tarif non conventionné",
     "nonConventionedIntro": "Pour les soins avec des thérapeutes non conventionnés au sein de notre équipe, le tarif ci-dessous s'applique.",

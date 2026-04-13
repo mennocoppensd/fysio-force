@@ -157,7 +157,13 @@
 }
 
 .team .team-card-wrapper .project-image img {
+  object-fit: cover;
   object-position: center top;
+}
+
+/* Hover-zoom: combineert met optionele inline scale op de <img> (o.a. Mathieu) */
+.team .team-card-wrapper.project-card:hover .project-image img {
+  transform: scale(1.1);
 }
 
 .team .team-card-wrapper .project-content > p {

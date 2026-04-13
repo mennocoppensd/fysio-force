@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Contact.css';
 
@@ -28,7 +27,7 @@ const Contact = () => {
               </div>
               <div className="button-group">
                 <a 
-                  href="https://your-booking-url.com" 
+                  href={t('contact.bookingUrl')} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="cta-button primary-btn"
@@ -73,16 +72,43 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.6917913034283!2d4.2404646!3d50.8667369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c7f5d9c8c5a7%3A0x5b7b7c96c5e16b9a!2sStationsstraat%20312a%2C%201700%20Dilbeek%2C%20Belgium!5e0!3m2!1sen!2sus!4v1681762200000!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0, display: 'block' }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div className="contact-map-column">
+            <div className="contact-address-panel">
+              <div className="contact-address-icon" aria-hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    fillRule="evenodd"
+                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.035a8.955 8.955 0 00-8.956-8.956c-4.935 0-8.957 4.021-8.957 8.957 0 3.064 2.018 6.046 3.962 8.035 1.029 1.052 2.15 1.99 2.683 2.282a16.975 16.975 0 001.145.742zM12 13.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="contact-address-body">
+                <span className="contact-address-label">{t('contact.addressLabel')}</span>
+                <p className="contact-address-street">{t('contact.addressStreet')}</p>
+                <p className="contact-address-city">{t('contact.addressCity')}</p>
+                <a
+                  href={t('contact.mapsUrl')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-address-maps"
+                >
+                  {t('contact.openInMaps')}
+                </a>
+              </div>
+            </div>
+            <div className="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.6917913034283!2d4.2404646!3d50.8667369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c7f5d9c8c5a7%3A0x5b7b7c96c5e16b9a!2sStationsstraat%20312a%2C%201700%20Dilbeek%2C%20Belgium!5e0!3m2!1sen!2sus!4v1681762200000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0, display: 'block' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={t('contact.mapEmbedTitle')}
+              />
+            </div>
           </div>
         </div>
       </div>

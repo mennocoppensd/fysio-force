@@ -1,4 +1,7 @@
 {
+  "footer": {
+    "copyright": "© {{year}} FysioForce. Alle rechten voorbehouden."
+  },
   "loader": {
     "ariaProgress": "Website laden"
   },
@@ -53,7 +56,14 @@
       "weekend": "Zaterdag & zondag: Gesloten"
     },
     "bookingButton": "Maak een afspraak",
-    "followUs": "Volg ons"
+    "bookingUrl": "https://www.q-top.be/online-planner-v2/NL/?root=kq54822",
+    "followUs": "Volg ons",
+    "addressLabel": "Adres",
+    "addressStreet": "Stationstraat 312",
+    "addressCity": "1700 Dilbeek",
+    "openInMaps": "Open in Google Maps",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Stationstraat+312%2C+1700+Dilbeek%2C+Belgium",
+    "mapEmbedTitle": "Kaart — FysioForce Dilbeek"
   },
   "services": {
     "title": "Diensten",
@@ -136,16 +146,17 @@
         "convention": "nonConventioned",
         "enerki": false,
         "role": "Oprichter FysioForce",
-        "image": "/mathieu.png",
+        "image": "/teamvoorstelling%20Mathieu.jpg",
+        "imageObjectPosition": "center 54%",
+        "imageScale": 1.12,
         "details": [
-          "Master in revalidatiewetenschappen (2018, VUB)",
-          "Master in sportkinesitherapie (2018, VUB)",
+          "Master in revalidatiewetenschappen en kinesitherapie specialisatie sportkinesitherapie (2018, VUB)",
           "Postgraduaat Manuele Therapie (2021, UGent)",
-          "Dry needling (2023, The Hive)",
-          "Fysiek coach voetbal (2021, Voetbal Vlaanderen)",
+          "Physical coach voetbal (2021, Vlaamse Trainer School)",
+          "Dry Needling (2023, The Hive)",
           "Velocity-based training (2023, Smart Education)",
-          "Medische staf K Diegem Sport (2023–2026)",
-          "Medische staf & fysieke coaching BOKA United (2017–2023, 2026 – heden)"
+          "Head Medical Staff K Diegem Sport (2023–2026)",
+          "Head Medical Staff & Physical Coach BOKA United (2017–2023, 2026 – heden)"
         ]
       },
       {
@@ -155,7 +166,10 @@
         "role": "Kinesitherapeut",
         "image": "/team-placeholder-loes.svg",
         "details": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+          "Master in revalidatiewetenschappen en kinesitherapie specialisatie Pediatrie (2019, UGent)",
+          "Postgraduaat pediatrische revalidatie bij neurologische aandoeningen; Bobath-opleiding (2021, UGent)",
+          "Manuele therapie upper spine: cervicaal-thoracaal (2026, SmartEducation)",
+          "The Shoulder: master class (2026, Ann Cools, The Hive)"
         ]
       },
       {
@@ -183,22 +197,10 @@
   "rates": {
     "title": "Tarieven",
     "conventional": {
-      "title": "Geconventioneerd tarief (o.a. Loes Verspecht)",
-      "lead": "Bij een geconventioneerde sessie betaalt u het ereloon vastgelegd door het RIZIV. Uw mutualiteit vergoedt een deel; hieronder vindt u het typische remgeld na terugbetaling.",
-      "description": "Deze bedragen volgen de officiële RIZIV-tarieven.",
-      "reimbursementLabel": "Terugbetaling (richtbedrag)",
-      "items": [
-        {
-          "name": "Eerste sessie (45–60 min)",
-          "price": "€25,00",
-          "reimbursement": "€22,26"
-        },
-        {
-          "name": "Vervolgsessie (30 min)",
-          "price": "€22,00",
-          "reimbursement": "€19,26"
-        }
-      ]
+      "title": "Geconventioneerd tarief",
+      "intro": "Het tarief per sessie verschilt per pathologische situatie. Dit kan u terugvinden op de website van het RIZIV. Hieronder kan u de link naar de meest recente publicatie van het RIZIV terugvinden:",
+      "rizivLinkLabel": "Tarieven RIZIV",
+      "rizivLinkUrl": "https://www.riziv.fgov.be/nl/thema-s/verzorging-kosten-en-terugbetaling/wat-het-ziekenfonds-terugbetaalt/individuele-verzorging/honoraria-prijzen-en-vergoedingen/honoraria-prijzen-en-tegemoetkomingen-van-kinesitherapeuten"
     },
     "nonConventionedTitle": "Gedeconventioneerd tarief",
     "nonConventionedIntro": "Voor behandelingen bij gedeconventioneerde therapeuten binnen ons team geldt onderstaand tarief.",

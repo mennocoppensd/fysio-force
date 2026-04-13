@@ -1,12 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import '../styles/Loader.css';
 
-const Loader = ({ progress = 0 }) => {
+const Loader = ({ progress = 0, exiting = false }) => {
   const { t } = useTranslation();
   const pct = Math.min(100, Math.max(0, Math.round(progress)));
 
   return (
-    <div className="loader-container">
+    <div
+      className={`loader-container${exiting ? ' loader-container--exiting' : ''}`}
+    >
       <div className="loader">
         <img 
           src="/Logo.svg" 
