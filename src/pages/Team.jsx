@@ -58,6 +58,8 @@ const Team = () => {
             const details = member.details ?? [];
             const hasDetails = details.length > 0;
             const isOpen = expandedIndex === index;
+            const isSoloEnerkiCard =
+              member.enerki && !members[index - 1]?.enerki && !members[index + 1]?.enerki;
 
             return (
               <Fragment key={`${member.name}-${index}`}>
@@ -82,7 +84,7 @@ const Team = () => {
                   </div>
                 )}
                 <div
-                  className="team-card-wrapper project-card"
+                  className={`team-card-wrapper project-card${isSoloEnerkiCard ? ' team-card-wrapper--centered' : ''}`}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="team-card-top">

@@ -207,16 +207,6 @@
           "Kinésithérapie du sport (1991, …)",
           "Ostéopathie (1996, The International Academy of Osteopathy)"
         ]
-      },
-      {
-        "name": "Alexander Van den Bergh",
-        "enerki": true,
-        "role": "Ostéopathe",
-        "image": "/Alexander.jpg",
-        "details": [
-          "Ostéopathie (2019, The International Academy of Osteopathy Ghent)",
-          "Master en ostéopathie du sport (2023, Bucks New University, Londres)"
-        ]
       }
     ]
   },
@@ -233,4 +223,4 @@
     "nonConventionedPerSession": "Par séance",
     "nonConventioned": "€35,00"
   }
-} 
+}

@@ -69,16 +69,6 @@
           "Sports physiotherapy (1991, …)",
           "Osteopathy (1996, The International Academy of Osteopathy)"
         ]
-      },
-      {
-        "name": "Alexander Van den Bergh",
-        "enerki": true,
-        "role": "Osteopath",
-        "image": "/Alexander.jpg",
-        "details": [
-          "Osteopathy (2019, The International Academy of Osteopathy Ghent)",
-          "Master's in osteopathy in sports (2023, Bucks New University London)"
-        ]
       }
     ]
   },
@@ -204,4 +194,4 @@
     "nonConventionedPerSession": "Per session",
     "nonConventioned": "€35,00"
   }
-} 
+}

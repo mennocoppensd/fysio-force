@@ -146,6 +146,12 @@
   overflow: hidden;
 }
 
+.team .team-card-wrapper--centered {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 480px);
+}
+
 .team .team-card-top {
   display: flex;
   flex-direction: column;
