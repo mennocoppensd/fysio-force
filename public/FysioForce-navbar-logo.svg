@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="300" height="64">
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;display=swap");
+      .logo-fysio {
+        fill: #296cff;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .logo-force {
+        fill: #38b6ff;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+      }
+    </style>
+    <filter id="navbar-shadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Navbar-achtergrond (#111827) + schaduw zoals .navbar -->
+  <rect width="300" height="56" fill="#111827" filter="url(#navbar-shadow)" />
+
+  <!-- Logo.svg in 2424 px, 8 px marge rechts (.navbar-logo) -->
+  <!-- Container-padding links: 2rem (32 px) -->
+  <g transform="translate(32, 16)">
+    <g transform="translate(4.175, 0) scale(0.036816)">
+      <rect fill="#38b6ff" x="168.27" y="146.82" width="257.04" height="73.04" />
+      <path
+        fill="#38b6ff"
+        d="M168.27,324.7h257.04v71.47h-174.4v255.39s-82.64-31.8-82.64-155.02v-171.83Z"
+      />
+      <path fill="#296cff" d="M0,0v385.3l.05-.05,85.41,95.72V73.54h339.85V0H0Z" />
+    </g>
+  </g>
+
+  <!-- FysioForce-tekst: 1.5rem / bold, na logo (32 + 24 + 8 = 64 px) -->
+  <text x="64" y="28" dominant-baseline="middle">
+    <tspan class="logo-fysio">Fysio</tspan><tspan class="logo-force" dx="-3">Force</tspan>
+  </text>
+</svg>

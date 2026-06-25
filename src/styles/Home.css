@@ -3,7 +3,7 @@
   overflow: hidden;
   background-color: #1a1a1a;
   background-image: url('/frontpage.jpeg');
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -167,11 +167,18 @@
 
 
 
+@media (min-width: 769px) {
+  .home {
+    background-size: 100% auto;
+    background-position: center center;
+  }
+}
+
 @media (max-width: 768px) {
   .home {
     background-attachment: scroll;
-    background-size: 100% auto;
-    background-position: center center;
+    background-size: cover;
+    background-position: center 42%;
   }
 
   .hero h1 {

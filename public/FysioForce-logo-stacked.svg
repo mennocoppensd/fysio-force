@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 104" width="120" height="104">
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;display=swap");
+      .logo-fysio {
+        fill: #296cff;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+      }
+      .logo-force {
+        fill: #38b6ff;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    </style>
+    <filter id="stacked-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Zelfde achtergrond als navbar -->
+  <rect width="120" height="104" rx="4" fill="#111827" filter="url(#stacked-shadow)" />
+
+  <!-- Logo gecentreerd bovenaan (4848 px) -->
+  <g transform="translate(36, 16)">
+    <g transform="translate(8.35, 0) scale(0.073632)">
+      <rect fill="#38b6ff" x="168.27" y="146.82" width="257.04" height="73.04" />
+      <path
+        fill="#38b6ff"
+        d="M168.27,324.7h257.04v71.47h-174.4v255.39s-82.64-31.8-82.64-155.02v-171.83Z"
+      />
+      <path fill="#296cff" d="M0,0v385.3l.05-.05,85.41,95.72V73.54h339.85V0H0Z" />
+    </g>
+  </g>
+
+  <!-- FysioForce-tekst klein, gecentreerd onder het logo -->
+  <text x="60" y="82" text-anchor="middle" dominant-baseline="middle">
+    <tspan class="logo-fysio">Fysio</tspan><tspan class="logo-force" dx="-1.5">Force</tspan>
+  </text>
+</svg>

@@ -304,14 +304,6 @@ const Vacancy = () => {
               >
                 {status === 'sending' ? t('vacancy.sending') : t('vacancy.submit')}
               </button>
-              <a
-                href="https://wa.me/32456943294"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="vacancy-whatsapp cta-button secondary-btn"
-              >
-                {t('vacancy.whatsappAlt')}
-              </a>
             </div>
           </form>
         </div>
