@@ -22,7 +22,8 @@ const Navbar = () => {
       'services',
       'rates',
       'contact',
-      'faq'
+      'faq',
+      'vacancy'
     ];
 
     const getNavOffset = () => {
@@ -90,7 +91,8 @@ const Navbar = () => {
     { id: 'services', label: t('nav.services') },
     { id: 'rates', label: t('nav.rates') },
     { id: 'contact', label: t('nav.contact') },
-    { id: 'faq', label: t('nav.faq') }
+    { id: 'faq', label: t('nav.faq') },
+    { id: 'vacancy', label: t('nav.vacancy') }
   ];
 
   return (

@@ -10,7 +10,8 @@
     "services": "Services",
     "rates": "Rates",
     "contact": "Contact",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "vacancy": "Vacancy"
   },
   "loader": {
     "ariaProgress": "Loading website"
@@ -52,7 +53,8 @@
         "convention": "conventioned",
         "enerki": false,
         "role": "Physiotherapist",
-        "image": "/team-placeholder-loes.svg",
+        "image": "/Profielfoto%20Loes.jpeg",
+        "imageObjectPosition": "center 22%",
         "details": [
           "Master in rehabilitation sciences and physiotherapy, specialisation in paediatrics (2019, UGent)",
           "Postgraduate certificate in paediatric rehabilitation for neurological conditions; Bobath training (2021, UGent)",
@@ -193,5 +195,50 @@
     "nonConventionedIntro": "For treatments with non-conventioned therapists in our team, the rate below applies.",
     "nonConventionedPerSession": "Per session",
     "nonConventioned": "€35,00"
+  },
+  "vacancy": {
+    "title": "Vacancy",
+    "tagline": "FysioForce is building the future!",
+    "body": "Physiotherapist, osteopath, podiatrist, dietitian, doctor or other qualifications in the (para)medical field? Interested in being part of FysioForce? Feel free to contact us for an introductory meeting. See you soon!",
+    "formTitle": "Apply without obligation",
+    "formSubject": "FysioForce vacancy application",
+    "fields": {
+      "name": "Name *",
+      "email": "Email *",
+      "phone": "Phone",
+      "diploma": "Qualification / role",
+      "diplomaPlaceholder": "e.g. physiotherapist, osteopath, …",
+      "message": "Message",
+      "messagePlaceholder": "Tell us briefly about yourself and your interest in FysioForce.",
+      "cv": "CV (optional)"
+    },
+    "cvHint": "PDF or Word (.doc, .docx) — max. 5 MB",
+    "submit": "Send application",
+    "sending": "Sending…",
+    "success": "Thank you! We will contact you as soon as possible.",
+    "whatsappAlt": "Or contact us via WhatsApp",
+    "honeypotLabel": "Company",
+    "fileSelected": "Selected: {{name}}",
+    "fieldErrors": {
+      "nameRequired": "Please enter your name.",
+      "nameTooShort": "Name must be at least 2 characters.",
+      "emailRequired": "Please enter your email address.",
+      "invalidEmail": "Please enter a valid email address.",
+      "invalidPhone": "Please enter a valid phone number.",
+      "messageRequired": "Please enter a message.",
+      "messageTooShort": "Message must be at least 10 characters.",
+      "messageSpam": "Message contains invalid or suspicious content.",
+      "invalidFile": "Invalid file name."
+    },
+    "errors": {
+      "fileType": "Only PDF or Word files are allowed.",
+      "fileSize": "The file must be no larger than 5 MB.",
+      "invalidFile": "Invalid file name.",
+      "invalidEmail": "Please enter a valid email address.",
+      "invalidPhone": "Please enter a valid phone number.",
+      "invalidInput": "Please check your input and try again.",
+      "rateLimit": "Too many attempts. Please try again later or contact us via WhatsApp.",
+      "submit": "Something went wrong. Please try again or contact us via WhatsApp."
+    }
   }
 }

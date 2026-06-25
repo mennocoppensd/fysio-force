@@ -6,10 +6,10 @@ import ImageCarousel from '../components/ImageCarousel';
 const ABOUT_GALLERY_IMAGES = [
   { url: '/slideshow/Foto slideshow 1.jpg', alt: 'FysioForce praktijk' },
   { url: '/slideshow/Foto slideshow 2.jpg', alt: 'FysioForce praktijk' },
-  { url: '/slideshow/Foto slideshow 3.jpg', alt: 'FysioForce praktijk' },
-  { url: '/slideshow/Foto slideshow 4.jpg', alt: 'FysioForce praktijk' },
+  { url: '/site1.jpeg', alt: 'FysioForce praktijk', imageObjectPosition: 'center 35%' },
+  { url: '/site2.jpeg', alt: 'FysioForce praktijk' },
   { url: '/slideshow/Foto slideshow 5.jpg', alt: 'FysioForce praktijk' },
-  { url: '/slideshow/Foto slideshow 6.jpg', alt: 'FysioForce praktijk' },
+  { url: '/site3.jpeg', alt: 'FysioForce praktijk' },
 ];
 
 const About = () => {

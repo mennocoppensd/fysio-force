@@ -10,7 +10,8 @@
     "services": "Services",
     "rates": "Tarifs",
     "contact": "Contact",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "vacancy": "Vacature"
   },
   "loader": {
     "ariaProgress": "Chargement du site"
@@ -190,7 +191,8 @@
         "convention": "conventioned",
         "enerki": false,
         "role": "Kinésithérapeute",
-        "image": "/team-placeholder-loes.svg",
+        "image": "/Profielfoto%20Loes.jpeg",
+        "imageObjectPosition": "center 22%",
         "details": [
           "Master en sciences de la réadaptation et kinésithérapie, spécialisation pédiatrie (2019, UGent)",
           "Master en réadaptation pédiatrique en pathologies neurologiques ; formation Bobath (2021, UGent)",
@@ -222,5 +224,50 @@
     "nonConventionedIntro": "Pour les soins avec des thérapeutes non conventionnés au sein de notre équipe, le tarif ci-dessous s'applique.",
     "nonConventionedPerSession": "Par séance",
     "nonConventioned": "€35,00"
+  },
+  "vacancy": {
+    "title": "Vacature",
+    "tagline": "FysioForce construit l'avenir !",
+    "body": "Kinésithérapeute, ostéopathe, podologue, diététicien, médecin ou autre diplôme dans le domaine (para)médical ? Intéressé(e) à faire partie de FysioForce ? Contactez-nous sans engagement pour une rencontre. À bientôt !",
+    "formTitle": "Postulez sans engagement",
+    "formSubject": "Candidature FysioForce",
+    "fields": {
+      "name": "Nom *",
+      "email": "E-mail *",
+      "phone": "Téléphone",
+      "diploma": "Diplôme / fonction",
+      "diplomaPlaceholder": "p. ex. kinésithérapeute, ostéopathe, …",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous brièvement de vous et de votre intérêt pour FysioForce.",
+      "cv": "CV (facultatif)"
+    },
+    "cvHint": "PDF ou Word (.doc, .docx) — max. 5 Mo",
+    "submit": "Envoyer la candidature",
+    "sending": "Envoi en cours…",
+    "success": "Merci ! Nous vous contacterons dès que possible.",
+    "whatsappAlt": "Ou contactez-nous via WhatsApp",
+    "honeypotLabel": "Entreprise",
+    "fileSelected": "Sélectionné : {{name}}",
+    "fieldErrors": {
+      "nameRequired": "Veuillez entrer votre nom.",
+      "nameTooShort": "Le nom doit contenir au moins 2 caractères.",
+      "emailRequired": "Veuillez entrer votre adresse e-mail.",
+      "invalidEmail": "Veuillez entrer une adresse e-mail valide.",
+      "invalidPhone": "Veuillez entrer un numéro de téléphone valide.",
+      "messageRequired": "Veuillez entrer un message.",
+      "messageTooShort": "Le message doit contenir au moins 10 caractères.",
+      "messageSpam": "Le message contient un contenu invalide ou suspect.",
+      "invalidFile": "Nom de fichier invalide."
+    },
+    "errors": {
+      "fileType": "Seuls les fichiers PDF ou Word sont autorisés.",
+      "fileSize": "Le fichier ne doit pas dépasser 5 Mo.",
+      "invalidFile": "Nom de fichier invalide.",
+      "invalidEmail": "Veuillez entrer une adresse e-mail valide.",
+      "invalidPhone": "Veuillez entrer un numéro de téléphone valide.",
+      "invalidInput": "Vérifiez vos données et réessayez.",
+      "rateLimit": "Trop de tentatives. Réessayez plus tard ou contactez-nous via WhatsApp.",
+      "submit": "Une erreur s'est produite. Réessayez ou contactez-nous via WhatsApp."
+    }
   }
 }

@@ -81,7 +81,17 @@ const ImageCarousel = ({ images }) => {
                 transform: `translateX(${(index - currentIndex) * 100}%)`,
               }}
             >
-              <img src={image.url} alt={image.alt ?? ''} className="carousel-image" />
+              <img
+                src={image.url}
+                alt={image.alt ?? ''}
+                className="carousel-image"
+                style={{
+                  ...(image.imageObjectFit && { objectFit: image.imageObjectFit }),
+                  ...(image.imageObjectPosition && {
+                    objectPosition: image.imageObjectPosition,
+                  }),
+                }}
+              />
             </div>
           ))}
           <div className="carousel-dots">

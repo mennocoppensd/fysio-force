@@ -40,7 +40,7 @@ const Home = () => {
             {t('home.cta.contact')}
           </a>
           <a 
-            href="https://linktr.ee/your-username" 
+            href="https://linktr.ee/fysioforce" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="cta-button secondary-btn"

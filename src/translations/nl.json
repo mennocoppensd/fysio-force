@@ -13,7 +13,8 @@
     "services": "Diensten",
     "rates": "Tarieven",
     "contact": "Contact",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "vacancy": "Vacature"
   },
   "home": {
     "welcome": "FysioForce",
@@ -164,7 +165,8 @@
         "convention": "conventioned",
         "enerki": false,
         "role": "Kinesitherapeut",
-        "image": "/team-placeholder-loes.svg",
+        "image": "/Profielfoto%20Loes.jpeg",
+        "imageObjectPosition": "center 22%",
         "details": [
           "Master in revalidatiewetenschappen en kinesitherapie specialisatie Pediatrie (2019, UGent)",
           "Postgraduaat pediatrische revalidatie bij neurologische aandoeningen; Bobath-opleiding (2021, UGent)",
@@ -196,5 +198,50 @@
     "nonConventionedIntro": "Voor behandelingen bij gedeconventioneerde therapeuten binnen ons team geldt onderstaand tarief.",
     "nonConventionedPerSession": "Per sessie",
     "nonConventioned": "€35,00"
+  },
+  "vacancy": {
+    "title": "Vacature",
+    "tagline": "FysioForce bouwt aan de toekomst!",
+    "body": "Kinesitherapeut, osteopaat, podoloog, diëtist, arts of andere diploma's in het (para)medisch domein? Interesse om deel uit te maken van FysioForce? Neem vrijblijvend contact met ons op voor een kennismakingsgesprek. Tot snel!",
+    "formTitle": "Solliciteer vrijblijvend",
+    "formSubject": "Vacatureaanvraag FysioForce",
+    "fields": {
+      "name": "Naam *",
+      "email": "E-mail *",
+      "phone": "Telefoon",
+      "diploma": "Diploma / functie",
+      "diplomaPlaceholder": "bv. kinesitherapeut, osteopaat, …",
+      "message": "Bericht",
+      "messagePlaceholder": "Vertel kort iets over jezelf en je interesse in FysioForce.",
+      "cv": "CV (optioneel)"
+    },
+    "cvHint": "PDF of Word (.doc, .docx) — max. 5 MB",
+    "submit": "Verstuur sollicitatie",
+    "sending": "Versturen…",
+    "success": "Bedankt! We nemen zo snel mogelijk contact met je op.",
+    "whatsappAlt": "Of neem contact op via WhatsApp",
+    "honeypotLabel": "Bedrijf",
+    "fileSelected": "Geselecteerd: {{name}}",
+    "fieldErrors": {
+      "nameRequired": "Vul je naam in.",
+      "nameTooShort": "Naam moet minstens 2 tekens bevatten.",
+      "emailRequired": "Vul je e-mailadres in.",
+      "invalidEmail": "Vul een geldig e-mailadres in.",
+      "invalidPhone": "Vul een geldig telefoonnummer in.",
+      "messageRequired": "Vul een bericht in.",
+      "messageTooShort": "Bericht moet minstens 10 tekens bevatten.",
+      "messageSpam": "Bericht bevat ongeldige of verdachte inhoud.",
+      "invalidFile": "Ongeldige bestandsnaam."
+    },
+    "errors": {
+      "fileType": "Alleen PDF- of Word-bestanden zijn toegestaan.",
+      "fileSize": "Het bestand mag maximaal 5 MB zijn.",
+      "invalidFile": "Ongeldige bestandsnaam.",
+      "invalidEmail": "Vul een geldig e-mailadres in.",
+      "invalidPhone": "Vul een geldig telefoonnummer in.",
+      "invalidInput": "Controleer je invoer en probeer opnieuw.",
+      "rateLimit": "Te veel pogingen. Probeer later opnieuw of neem contact op via WhatsApp.",
+      "submit": "Er ging iets mis. Probeer het opnieuw of neem contact op via WhatsApp."
+    }
   }
 }

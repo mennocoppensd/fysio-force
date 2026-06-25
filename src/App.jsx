@@ -12,6 +12,7 @@ import ScrollToTop from './components/ScrollToTop';
 import './i18n';
 import FAQ from './pages/FAQ';
 import Rates from './pages/Rates';
+import Vacancy from './pages/Vacancy';
 import Footer from './components/Footer';
 
 const LOADER_DURATION_MS = 2000;
@@ -56,6 +57,7 @@ function App() {
         <section id="rates"><Rates /></section>
         <section id="contact"><Contact /></section>
         <section id="faq"><FAQ /></section>
+        <section id="vacancy"><Vacancy /></section>
         <Footer />
       </main>
       {loaderMounted && (

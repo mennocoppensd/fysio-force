@@ -45,7 +45,7 @@ const Contact = () => {
               </div>
               <h3>{t('contact.social')}</h3>
               <a 
-                href="https://linktr.ee/your-username"
+                href="https://linktr.ee/fysioforce"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="cta-button secondary-btn"
@@ -62,7 +62,7 @@ const Contact = () => {
               </div>
               <h3>{t('contact.whatsapp')}</h3>
               <a 
-                href="https://wa.me/32496112545"
+                href="https://wa.me/32456943294"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="cta-button secondary-btn"

@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="contact-grid">
           {/* Social Media Link */}
           <a 
-            href="https://linktr.ee/jouw-linktree-username" // Vervang met je eigen Linktree URL
+            href="https://linktr.ee/fysioforce" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="contact-item"
@@ -24,7 +24,7 @@ const Contact = () => {
 
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/32496112545" // Vervang met je WhatsApp nummer
+            href="https://wa.me/32456943294"
             target="_blank" 
             rel="noopener noreferrer" 
             className="contact-item"

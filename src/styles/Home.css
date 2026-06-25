@@ -1,9 +1,10 @@
 .home {
   padding-top: 80px;
   overflow: hidden;
-  background-image: url('/Home.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #1a1a1a;
+  background-image: url('/frontpage.jpeg');
+  background-size: 100% auto;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
@@ -167,11 +168,10 @@
 
 
 @media (max-width: 768px) {
-  /* Hero-foto: sterker inzoomen + anker naar beneden; desktop blijft .home defaults */
   .home {
     background-attachment: scroll;
-    background-size: 152%;
-    background-position: center 72%;
+    background-size: 100% auto;
+    background-position: center center;
   }
 
   .hero h1 {

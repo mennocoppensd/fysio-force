@@ -1,0 +1,165 @@
+.vacancy {
+  padding: 4rem 0;
+  background: var(--background-color);
+}
+
+.vacancy .section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.vacancy-tagline {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 auto 1rem;
+  max-width: 720px;
+}
+
+.vacancy-description {
+  max-width: 760px;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.vacancy-form-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--surface-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.vacancy-form-card h3 {
+  margin: 0 0 1.5rem;
+  font-size: 1.35rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.vacancy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.vacancy-field input.vacancy-input--valid,
+.vacancy-field textarea.vacancy-input--valid {
+  border-color: #10b981;
+}
+
+.vacancy-file-ok {
+  color: #10b981;
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.vacancy-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vacancy-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.vacancy-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.vacancy-field span {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.vacancy-field input,
+.vacancy-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.12));
+  border-radius: 8px;
+  background: var(--background-color);
+  color: var(--text-color);
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vacancy-field input:focus,
+.vacancy-field textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(41, 108, 255, 0.15);
+}
+
+.vacancy-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.vacancy-field--file input[type='file'] {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.vacancy-field--file small {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.vacancy-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.vacancy-submit {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.vacancy-whatsapp {
+  display: block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vacancy-notice {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.vacancy-success {
+  color: #10b981;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .vacancy-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .vacancy-form-card {
+    padding: 1.5rem;
+  }
+}
